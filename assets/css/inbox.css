@@ -385,3 +385,11 @@ input#buscador {
     letter-spacing: 0.5px;
     border: 0px;
 }
+.point-red {
+    position: absolute;
+    background: #e96464;
+    width: 8px;
+    height: 8px;
+    right: 18px;
+    border-radius: 10px;
+}
