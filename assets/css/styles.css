@@ -118,3 +118,15 @@ p.pass {
     position: relative;
     top: 4rem;
 }
+svg.icon-search {
+    position: absolute;
+    top: 0px;
+    margin: auto;
+    bottom: 0px;
+    left: 1.8rem;
+    filter: opacity(0.5);
+        width: 19px;
+}
+.form-search {
+    position: relative;
+}

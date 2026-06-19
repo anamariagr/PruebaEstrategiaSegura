@@ -3,9 +3,17 @@
     var html = ` <div class="col-12 table-case">
                             <div class="row">
                                 <div class="col-12">
-                                    <form class="d-flex" role="search">
-                                        <input class="form-control m-2" id="buscador" type="search" placeholder="Buscar por radicado o nombre del asociado..."
-                                            aria-label="Search" />
+                                    <form class="d-flex form-search" role="search">
+                                                 <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+
+                                    <svg class="icon-search" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-search absolute left-3 top-1/2 -translate-y-1/2 text-muted-foreground" aria-hidden="true"><path d="m21 21-4.34-4.34"></path><circle cx="11" cy="11" r="8"></circle></svg>
+
+                                    <input
+                                        class="form-control m-2 ps-5"
+                                        id="buscador"
+                                        type="search"
+                                        placeholder="Buscar por radicado o nombre del asociado..."
+                                        aria-label="Search">
                                         <button class="btn btn-filtros" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-funnel" aria-hidden="true"><path d="M10 20a1 1 0 0 0 .553.895l2 1A1 1 0 0 0 14 21v-7a2 2 0 0 1 .517-1.341L21.74 4.67A1 1 0 0 0 21 3H3a1 1 0 0 0-.742 1.67l7.225 7.989A2 2 0 0 1 10 14z"></path></svg>Filtros</button>
                                     </form>
                                 </div>
