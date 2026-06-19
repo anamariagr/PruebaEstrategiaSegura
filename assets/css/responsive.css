@@ -1,0 +1,25 @@
+
+@media (max-width: 900px) {
+ 
+.form-register {
+        background: #F4F6F9;
+        padding-top: 0px;
+    }
+
+.logo-mobile {
+           height: 41px;
+        width: 34px;
+        padding: 1px;
+        position: relative;
+        left: 1px;
+        top: -2px;
+}
+p.titel {
+    font-size: 18px;
+        left: -22px;
+        position: relative;
+        top: -5px;
+}
+}
+
+
