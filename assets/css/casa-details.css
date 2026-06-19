@@ -1,0 +1,300 @@
+.content-main-details {
+    padding: 30px;
+}
+
+.personal-info {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+.personal-info .item {
+    padding: 10px;
+    width: 205px;
+}
+
+p.text-sm {
+    font-size: 12px;
+    color: #8192a9;
+    position: relative;
+    top: -1px;
+    padding-right: 4px;
+}
+
+.text-filter svg {
+    color: #8283a1;
+    position: relative;
+    top: 2px;
+    left: -2px;
+    width: 14px;
+}
+
+.text-filter {
+    font-size: 11px;
+    gap: 2px;
+    position: relative;
+    left: -4px;
+}
+
+.text-filter p {
+    margin-bottom: 8px;
+}
+
+.top-info p {
+    font-size: 11px;
+    border: 1px solid #ff000000;
+    padding: 0px 7px 1px 9px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top: 4px;
+}
+
+.type-document {
+    font-size: 12.5px;
+    margin-top: -11px;
+    color: #8a9ab0;
+    position: relative;
+
+}
+
+p.text-id {
+    font-size: 11.4px;
+}
+
+.card-alert {
+    background: #fff2f2;
+    font-size: 12px;
+    border-radius: 15px;
+    padding: 11px 6px 10px 4px;
+    border: solid 1px #ff9191;
+    color: #e33939;
+    margin: 4px 0px 15px 0px;
+}
+
+.btn-case {
+    background: #ffffff00;
+    color: #484c75;
+    border: solid 1px gray;
+    border-radius: 7px;
+    padding: 5px;
+    font-size: 14px;
+    padding: 5px 12px 5px 12px;
+
+}
+
+.text .top {
+    font-size: 15px;
+}
+
+.top svg {
+    filter: brightness(0.5);
+    margin: 6px 8px 10px -2px;
+}
+
+p.status-pending {
+    color: #dc9a20;
+    background-color: #fef87947;
+    padding: 0px 10px 0px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.collapse-description {
+    border-radius: 18px;
+}
+
+.relativ button {
+    padding: 8px;
+    border: 0px;
+    border-radius: 10px;
+    width: 100%;
+    color: white;
+    text-align: left;
+}
+
+button#stateDropdownBtn {
+    color: #5f5f5f;
+    background: #ececec;
+    font-size: 14px;
+}
+
+.profile {
+    position: relative;
+    top: 3px;
+    left: 5px;
+}
+
+svg.lucide.lucide-lock {
+    filter: contrast(0.5);
+    position: relative;
+    top: -2px;
+}
+
+svg.lucide.lucide-circle-x {
+    position: relative;
+    top: 0px;
+}
+
+p.priority-critica {
+    color: #dc2020;
+    background-color: #FFEBEE;
+    padding: 0px 10px 0px 10px;
+    border-radius: 6px;
+    width: fit-content;
+}
+
+.tab-content {
+    border-bottom-right-radius: 18px;
+    border-bottom-left-radius: 18px;
+}
+
+span.pill {
+
+    width: max-content;
+    font-size: 12px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: #d0a7a7;
+    border-radius: 10px;
+    padding: 0px 10px 0px 10px;
+}
+
+.item-rigth {
+    text-align: -webkit-right;
+}
+
+.form-check {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.alert-color {
+    background: #fffae5;
+    font-size: 14px;
+    color: #a9652a;
+}
+
+.item-rigth p {
+    font-size: 12px;
+    text-align: right;
+}
+
+.card-actual {
+    padding: 15px 15px 0px 15px;
+}
+
+.card-actual textarea {
+    width: 100%;
+}
+
+.card-actual textarea {
+    width: 100%;
+}
+
+.card-actual input.btn {
+    width: 100%;
+    background-color: #1e3a5f;
+
+
+}
+
+textarea {
+    background: #F4F6F9;
+    border: 1px solid #e0dede;
+    border-radius: 7px;
+}
+
+.bg-red-600 {
+    background-color: #e60909;
+    width: 6px;
+    height: 6px;
+    display: block;
+    border-radius: 11px;
+    position: relative;
+    top: 7px;
+    margin-right: 4px;
+}
+
+.card-actual {
+    padding: 15px 15px 15px 15px;
+    font-size: 14px;
+}
+
+.card-actual svg {
+    filter: brightness(0.5);
+    margin-right: 8px;
+    position: relative;
+    top: 4px;
+}
+
+p.sub-text {
+    font-size: 12px;
+    color: gray;
+}
+
+.personal-state {
+    display: flex;
+    justify-content: space-between;
+}
+
+p.top-text {
+    font-size: 11px;
+    text-transform: uppercase;
+    color: gray;
+    margin-bottom: 14px;
+}
+
+.item-rigth p {
+    font-size: 12px;
+    text-align: right;
+}
+
+.card .top {
+    border-bottom: solid 1px gray;
+    padding: 15px 20px 0px 20px;
+}
+
+.card .bottom {
+    padding: 11px;
+}
+
+.bottom p {
+    font-size: 13px;
+}
+
+.card .bottom {
+    padding: 5px;
+}
+
+.item p.text {
+    text-transform: uppercase;
+    font-size: 10px;
+    color: #818c9b;
+}
+
+.top-info p {
+    font-size: 12px;
+    color: #ac4204;
+    border: 1px solid #ff000000;
+    padding: 0px 7px 1px 9px;
+    text-align: center;
+    border-radius: 10px;
+    position: relative;
+    top: 4px;
+    width: max-content;
+}
+
+.personal-info .item p {
+    margin-bottom: 0;
+}
+
+.personal-state {
+    display: flex;
+}
+
+.personal-info .item.text-rigth {
+    text-align: right;
+}
