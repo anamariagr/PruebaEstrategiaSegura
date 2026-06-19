@@ -1,0 +1,119 @@
+.introduction {
+    background: #1e3a5f;
+    color: white;
+}
+
+.form-register {
+    background: #f4f6f9;
+    padding-top: 2rem;
+}
+
+.text-icon {
+    padding-top: 21.9px;
+    padding-left: 12px;
+    letter-spacing: -0.03rem;
+}
+
+.content-description {
+    padding: 15px;
+    padding-left: 24px;
+}
+
+img.img-fluid {
+    width: 40px;
+    height: 48.75px;
+    margin-top: 9px;
+}
+
+h1.text-hero {
+    line-height: 1.2;
+    font-weight: 900;
+    font-size: 38px;
+    width: 33vw;
+    -webkit-text-stroke: 1px white;
+    letter-spacing: 0.7px;
+}
+
+.text-white70 {
+    color: #c5c4c4;
+}
+
+.icon-options {
+    background: #354E6F;
+    padding: 7px;
+    width: 35px;
+    border-radius: 9px;
+    padding-top: 3px;
+    margin-top: 6px;
+    height: 35px;
+}
+
+.item-option .text {
+    font-size: 14px;
+    margin-top: 1px;
+}
+
+.item-option .sub-text {
+    font-size: 12px;
+    color: #9AA6A8;
+}
+
+.form-description .text {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.form-description .sub-text {
+    font-size: 14px;
+    margin-bottom: 1.9rem;
+}
+
+.form-register input {
+    padding: 10px;
+    font-size: 14px;
+    filter: opacity(0.5);
+    border-radius: 13px;
+    border: solid 1px #bbbbbb;
+}
+
+.form-check .sub-text {
+    font-size: 13px;
+    color: #6f6b6b;
+    padding-left: 10px;
+}
+
+label.form-check-label {
+    font-size: 14px;
+    padding-left: 10px;
+    color: #959595;
+}
+
+.form-check-input:checked {
+    background-color: #1e3a5f;
+    border-color: #1e3a5f;
+}
+
+.btn-link,
+button.btn.btn-link {
+    font-size: 14px;
+    color: #1e3a5f;
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+button.btn.btn-primary {
+    background: #1e3a5f;
+    border: solid 1px #1e3a5f;
+    padding: 8px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+
+label.form-label {
+    font-size: 14px;
+}
+
+input#Check1 {
+    border: solid 1.4px #23364e;
+    padding: 8px;
+}
