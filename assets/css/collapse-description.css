@@ -102,13 +102,14 @@
 }
 
 .tab-pane .text-muted {
-    color: #64748B;
+    color: #64748b
+;
     font-size: 0.875rem;
 }
 
 /* ── Utility Classes ──────────────────────────────────────────– */
 .text-muted-foreground {
-    color: #64748B;
+    color: #64748b;
 }
 
 .btn-case svg {

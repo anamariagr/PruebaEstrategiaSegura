@@ -14,12 +14,16 @@
     overflow: auto;
 }
 
+aside ul {
+    padding: 10px;
+    margin: 10px;
+}
+
 /* ── Aside sidebar ───────────────────────────────────────────── */
 .sidebar {
     background: #1E3A5F;
     height: 100%;
     width: 240px;
-    padding: 10px;
     position: relative;
     flex-shrink: 0;
     transition: width 0.3s ease;
@@ -102,9 +106,9 @@ li.tap {
     border-radius: 10px;
     color: white;
     cursor: pointer;
-    width: 101%;
-    left: -1px;
+    width: 108%;
     position: relative;
+    left: -6px;
 }
 
 li.tap.active {
@@ -119,7 +123,7 @@ li.tap a {
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 1px 10px 10px 0;
+    padding: 1px 10px 10px 2px;
     color: #b6c2d0;
     text-decoration: none;
     margin-top: 10px;
@@ -164,8 +168,9 @@ li.tap a .text:hover {
     background: #1e3a5f;
     bottom: 0;
     width: 100%;
-    border-top: 0.1px solid #ffffff1c;
-    padding-bottom: 1px;
+    margin: 0px;
+    padding: 10px;
+    border-top: 0.2px solid #80808040;
 }
 
 .secon-part li.tap {
@@ -173,8 +178,17 @@ li.tap a .text:hover {
     color: #94a6ba;
 }
 
+.close a {
+    font-size: 12px;
+    margin-left: -5px;
+}
+
 .secon-part li.tap:hover {
-    background: #405777;
+    background: #37619b00;
+    color: white;
+}
+
+.sidebar a:hover {
     color: white;
 }
 

@@ -127,6 +127,9 @@ svg.icon-search {
     filter: opacity(0.5);
         width: 19px;
 }
+.pl-0{
+    padding-left: 0px!important;
+}
 .form-search {
     position: relative;
 }
