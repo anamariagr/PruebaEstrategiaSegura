@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/collapse-description.css">
-    <link rel="stylesheet" href="assets/css/casa-details.css">
+    <link rel="stylesheet" href="assets/css/case-details.css">
 
 
 </head>
@@ -526,15 +526,15 @@
                                         <div class="modal-header align-items-start">
                                             <div>
                                                 <h5 class="modal-title mb-1">Cambiar Prioridad</h5>
-                                                <p class="text-muted mb-0" style="font-size: 13px;">Solo prioridades permitidas para esta categoría. El SLA se recalculará.</p>
+                                                <p class="text-muted mb-0">Solo prioridades permitidas para esta categoría. El SLA se recalculará.</p>
                                             </div>
                                             <button type="button" class="btn-close ms-3" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <div class="modal-body">
+                                        <div class="modal-body form-priority">
                                             <form id="priorityForm">
                                                 <div class="mb-3">
-                                                    <label class="form-label fw-semibold mb-2">Nueva prioridad <span class="text-danger">*</span></label>
+                                                    <label class="form-label text">Nueva prioridad <span class="text-danger">*</span></label>
 
                                                     <label class="priority-option" id="optionNormal">
                                                         <div class="option-left">
@@ -562,7 +562,7 @@
                                                     </label>
                                                 </div>
                                                 <div class="mb-3">
-                                                    <label for="priorityReason" class="form-label fw-semibold">Motivo del cambio <span class="text-danger">*</span></label>
+                                                    <label for="priorityReason" class="form-label text">Motivo del cambio <span class="text-danger">*</span></label>
                                                     <textarea class="form-control" id="priorityReason" rows="3"
                                                         placeholder="Justifique el cambio de prioridad..." required></textarea>
                                                 </div>
