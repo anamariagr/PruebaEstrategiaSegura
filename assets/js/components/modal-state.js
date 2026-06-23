@@ -37,17 +37,30 @@
                 saveBtn.disabled = !hasPriority || !priorityReason.value.trim();
             }
 
+            
+
             function updateOptionCards() {
                 Object.values(optionMap).forEach(el => el && el.classList.remove('selected'));
                 const selected = priorityRadios.find(r => r.checked);
                 if (selected && optionMap[selected.value]) {
                     optionMap[selected.value].classList.add('selected');
                 }
+                
                 updateSaveState();
+            }
+
+            function selectCurrentPriority() {
+                const currentPriority = localStorage.getItem('casePriority') || estadoText.textContent.trim();
+                const currentRadio = priorityRadios.find(r => r.value === currentPriority);
+
+                priorityForm.reset();
+                if (currentRadio) currentRadio.checked = true;
+                updateOptionCards();
             }
 
             priorityRadios.forEach(radio => radio.addEventListener('change', updateOptionCards));
             priorityReason.addEventListener('input', updateSaveState);
+            modalEl.addEventListener('show.bs.modal', selectCurrentPriority);
 
             // Toast
             const toast = document.getElementById('priorityToast');
