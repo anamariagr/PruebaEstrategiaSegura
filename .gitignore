@@ -1,5 +1,6 @@
 
 node_modules/
+vendors/node_modules/
 
 
 .DS_Store
