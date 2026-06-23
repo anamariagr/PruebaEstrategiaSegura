@@ -1,6 +1,6 @@
 (function () {
-    var web = window.location.pathname.split('/').pop() || 'inbox.html';
-    var html = ` <div class="col-12 table-case">
+  var web = window.location.pathname.split("/").pop() || "inbox.html";
+  var html = ` <div class="col-12 table-case">
                             <div class="row">
                                 <div class="col-12">
                                     <form class="d-flex form-search" role="search">
@@ -208,99 +208,102 @@
                                 </div>
                             </div>
                         </div>`;
-    var container = document.getElementById('table-container');
-    if (container) container.innerHTML = html;
+  var container = document.getElementById("table-container");
+  if (container) container.innerHTML = html;
 
-    var searchForm = document.querySelector('#table-container form[role="search"]');
-    if (searchForm) {
-        searchForm.addEventListener('submit', function (e) {
-            e.preventDefault();
-        });
+  var searchForm = document.querySelector(
+    '#table-container form[role="search"]',
+  );
+  if (searchForm) {
+    searchForm.addEventListener("submit", function (e) {
+      e.preventDefault();
+    });
+  }
+
+  document.querySelectorAll(".tap[data-page]").forEach(function (li) {
+    if (li.getAttribute("data-page") === web) {
+      li.style.background = "#405777";
+    }
+  });
+
+  document.addEventListener("click", function (e) {
+    var btn = e.target.closest("#toggleSidebar");
+    if (btn) {
+      document.getElementById("sidebar").classList.toggle("collapsed");
+    }
+  });
+
+  const COLUMNAS_FECHA = [1, 10];
+
+  let columnaActual = -1;
+  let ordenAsc = true;
+
+  function parserFecha(texto) {
+    const soloFecha = texto.trim();
+    const partes = soloFecha.split("/");
+    if (partes.length >= 3) {
+      return new Date(
+        parseInt(partes[2]),
+        parseInt(partes[1]) - 1,
+        parseInt(partes[0]),
+      );
+    }
+    return new Date(0);
+  }
+
+  function orderTable(columna) {
+    const table = document.getElementById("myTable");
+    const tbody = table.querySelector("tbody");
+    const filas = Array.from(tbody.rows);
+    const esFecha = COLUMNAS_FECHA.includes(columna);
+
+    if (columna === columnaActual) {
+      ordenAsc = !ordenAsc;
+    } else {
+      columnaActual = columna;
+      ordenAsc = true;
     }
 
-    //enlace activo
+    filas.sort((a, b) => {
+      const textoA = a.cells[columna].innerText.trim();
+      const textoB = b.cells[columna].innerText.trim();
 
-    document.querySelectorAll('.tap[data-page]').forEach(function (li) {
-        if (li.getAttribute('data-page') === web) {
-            li.style.background = '#405777';
-        }
+      let resultado;
+
+      if (esFecha) {
+        const fechaA = parserFecha(textoA);
+        const fechaB = parserFecha(textoB);
+
+        resultado = fechaA - fechaB;
+      } else {
+        resultado = textoA.localeCompare(textoB, "es", { sensitivity: "base" });
+      }
+      return ordenAsc ? resultado : -resultado;
     });
 
-    document.addEventListener('click', function (e) {
-        var btn = e.target.closest('#toggleSidebar');
-        if (btn) {
-            document.getElementById('sidebar').classList.toggle('collapsed');
-        }
-    })
+    filas.forEach((fila) => tbody.appendChild(fila));
 
-    const COLUMNAS_FECHA = [1, 10];
+    table.querySelectorAll("thead th").forEach((th, i) => {
+      th.textContent = th.textContent.replace(/[↑↓↕]/g, "").trim();
+      if (i === columna) {
+        th.textContent += ordenAsc ? " ↑" : " ↓";
+      } else {
+        th.textContent += " ↑";
+      }
+    });
+  }
 
-    let columnaActual = -1;
-    let ordenAsc = true;
+  window.orderTable = orderTable;
 
-    function parserFecha(texto) {
-        const soloFecha = texto.trim();
-        const partes = soloFecha.split('/');
-        if (partes.length >= 3) {
-            return new Date(parseInt(partes[2]), parseInt(partes[1]) - 1, parseInt(partes[0]));
-        }
-        return new Date(0);
-    }
-
-    function orderTable(columna) {
-        const table = document.getElementById('myTable');
-        const tbody = table.querySelector('tbody');
-        const filas = Array.from(tbody.rows);
-        const esFecha = COLUMNAS_FECHA.includes(columna);
-
-        if (columna === columnaActual) {
-            ordenAsc = !ordenAsc;
-
-        } else {
-            columnaActual = columna;
-            ordenAsc = true;
-        }
-
-        filas.sort((a, b) => {
-            const textoA = a.cells[columna].innerText.trim();
-            const textoB = b.cells[columna].innerText.trim();
-
-            let resultado;
-
-            if (esFecha) {
-                const fechaA = parserFecha(textoA);
-                const fechaB = parserFecha(textoB);
-
-                resultado = fechaA - fechaB
-            } else {
-                resultado = textoA.localeCompare(textoB, 'es', { sensitivity: 'base' });
-
-            }
-            return ordenAsc ? resultado : - resultado;
-        });
-
-        filas.forEach(fila => tbody.appendChild(fila));
-
-        table.querySelectorAll('thead th').forEach((th, i) => {
-            th.textContent = th.textContent.replace(/[↑↓↕]/g, '').trim();
-            if (i === columna) {
-                th.textContent += ordenAsc ? ' ↑' : ' ↓';
-
-            } else {
-                th.textContent += ' ↑';
-            }
-        });
-    }
-
-    window.orderTable = orderTable;
-
-    var buscador = document.getElementById('buscador');
-    if (buscador) {
-        buscador.addEventListener('keyup', function () {
-            const filtro = this.value.toLowerCase();
-            document.querySelectorAll('#myTable tbody tr').forEach(fila => {
-                fila.style.display = fila.textContent.toLowerCase().includes(filtro) ? '' : 'none';
-            });
-        });
-    }
-})()
+  var buscador = document.getElementById("buscador");
+  if (buscador) {
+    buscador.addEventListener("keyup", function () {
+      const filtro = this.value.toLowerCase();
+      document.querySelectorAll("#myTable tbody tr").forEach((fila) => {
+        fila.style.display = fila.textContent.toLowerCase().includes(filtro)
+          ? ""
+          : "none";
+      });
+    });
+  }
+})();

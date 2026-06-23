@@ -1,5 +1,5 @@
 (function () {
-    var html = `<aside class="sidebar" id="sidebar">
+  var html = `<aside class="sidebar" id="sidebar">
                     <div class="icon-left" id="toggleSidebar">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                             class="bi bi-chevron-left" viewBox="0 0 16 16">
@@ -159,8 +159,9 @@
                                     </span>
                                 </a></li>
 
-                            <li>
-                                <span class="close p-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                            <li class="tap d-flex">
+                            <a href="register-case.html">
+                             <span class="close p-1"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
                                         viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                         stroke-linecap="round" stroke-linejoin="round"
                                         class="lucide lucide-log-out shrink-0" aria-hidden="true">
@@ -168,60 +169,60 @@
                                         <path d="M21 12H9"></path>
                                         <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path>
                                     </svg></span>
-                                <span class="text close"><a href="register-case.html" class="tap">Cerrar sesión</a> </span>
-
+                                <span class="text close">Cerrar sesión</span>
+                              </a>
                             </li>
 
                         </ul>
                     </div>
                 </aside>`;
-    var container = document.getElementById('sidebar-container');
-    if (container) container.innerHTML = html;
+  var container = document.getElementById("sidebar-container");
+  if (container) container.innerHTML = html;
 
-   // enlace activo - detectar página actual correctamente
-    var pathname = window.location.pathname;
-    var currentPage = 'inbox.html'; // default
-    
-    if (pathname.includes('case-details.html')) {
-        currentPage = 'case-details.html';
-    } else if (pathname.includes('inbox.html')) {
-        currentPage = 'inbox.html';
-    }
-    
-    document.querySelectorAll('.tap[data-page]').forEach(function (li) {
-        if (li.getAttribute('data-page') === currentPage) {
-            li.classList.add('active');
-        }
-    });
+  // enlace activo - detectar página actual correctamente
+  var pathname = window.location.pathname;
+  var currentPage = "inbox.html"; // default
 
-    // Toggle Sidebar functionality - funciona en ambas páginas
-    function setupToggleSidebar() {
-        var toggleBtn = document.getElementById('toggleSidebar');
-        var sidebar = document.getElementById('sidebar');
-        
-        if (toggleBtn && sidebar) {
-            // Remover listeners anteriores si existen
-            toggleBtn.onclick = null;
-            
-            // Agregar listener para click
-            toggleBtn.addEventListener('click', function(e) {
-                e.preventDefault();
-                e.stopPropagation();
-                console.log('Toggle clicked, sidebar state:', sidebar.className);
-                sidebar.classList.toggle('collapsed');
-                console.log('After toggle:', sidebar.className);
-            }, false);
-            
-            console.log('Toggle sidebar setup complete');
-        } else {
-            console.warn('Toggle button or sidebar not found');
-        }
+  if (pathname.includes("case-details.html")) {
+    currentPage = "case-details.html";
+  } else if (pathname.includes("inbox.html")) {
+    currentPage = "inbox.html";
+  }
+
+  document.querySelectorAll(".tap[data-page]").forEach(function (li) {
+    if (li.getAttribute("data-page") === currentPage) {
+      li.classList.add("active");
     }
-    
-    // Ejecutar inmediatamente
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', setupToggleSidebar);
+  });
+
+  function setupToggleSidebar() {
+    var toggleBtn = document.getElementById("toggleSidebar");
+    var sidebar = document.getElementById("sidebar");
+
+    if (toggleBtn && sidebar) {
+      toggleBtn.onclick = null;
+
+      toggleBtn.addEventListener(
+        "click",
+        function (e) {
+          e.preventDefault();
+          e.stopPropagation();
+          console.log("Toggle clicked, sidebar state:", sidebar.className);
+          sidebar.classList.toggle("collapsed");
+          console.log("After toggle:", sidebar.className);
+        },
+        false,
+      );
+
+      console.log("Toggle sidebar setup complete");
     } else {
-        setupToggleSidebar();
+      console.warn("Toggle button or sidebar not found");
     }
-})()
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", setupToggleSidebar);
+  } else {
+    setupToggleSidebar();
+  }
+})();

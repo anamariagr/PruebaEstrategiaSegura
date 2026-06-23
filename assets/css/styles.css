@@ -1,10 +1,10 @@
 /* ── Tipografía base ─────────────────────────────────────────── */
 @font-face {
-    font-family: 'Plus Jakarta Sans';
-    src: url('../fonts/PlusJakartaSans-Regular.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Plus Jakarta Sans";
+  src: url("../fonts/PlusJakartaSans-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
 }
 
 body,
@@ -18,120 +18,117 @@ select,
 .form-check-label,
 .btn,
 .list-group-item {
-    font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-/* ── Cards ───────────────────────────────────────────────────── */
 .card {
-    border-radius: 17px;
+  border-radius: 17px;
 }
 
 .card ul.list {
-    padding: 0;
-    text-align: left;
-    border-radius: 17px;
+  padding: 0;
+  text-align: left;
+  border-radius: 17px;
 }
 
 .cards .card {
-    border-radius: 17px;
-    background: #F4F6F9;
+  border-radius: 17px;
+  background: #f4f6f9;
 }
 
-/* ── List group ──────────────────────────────────────────────── */
 li.list-group-item.title {
-    padding: 13px;
-    background: #E8EEF5;
-    font-size: 13px;
-    color: #8b8b8b;
+  padding: 13px;
+  background: #e8eef5;
+  font-size: 13px;
+  color: #8b8b8b;
 }
 
 li.list-group-item {
-    padding: 10px;
-    border-bottom: 1px solid #dcd0d0;
+  padding: 10px;
+  border-bottom: 1px solid #dcd0d0;
 }
 
 li.list-group-item:last-child {
-    border-bottom: none;
+  border-bottom: none;
 }
 
-.list-group-item+.list-group-item {
-    font-size: 12px;
-    color: #737070;
-    padding: 13px;
-    position: relative;
+.list-group-item + .list-group-item {
+  font-size: 12px;
+  color: #737070;
+  padding: 13px;
+  position: relative;
 }
 
 li.list-group-item p {
-    margin-bottom: 0;
-    cursor: pointer;
+  margin-bottom: 0;
+  cursor: pointer;
 }
 
 .list-group-item .icono {
-    position: absolute;
-    right: 0;
-    top: 0;
-    padding: 26px;
-    display: none;
-    cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 26px;
+  display: none;
+  cursor: pointer;
 }
 
 .list-group-item:hover .icono {
-    display: inline-block;
+  display: inline-block;
 }
 
 .list .title .text {
-    color: #1e3a5fb5;
-    font-size: 12px;
+  color: #1e3a5fb5;
+  font-size: 12px;
 }
 
 .list .title .sub-text {
-    color: #1e3a5fb5;
-    font-size: 11px;
+  color: #1e3a5fb5;
+  font-size: 11px;
 }
 
-/* ── Utilidades de texto ─────────────────────────────────────── */
 p.post {
-    font-size: 11px;
-    color: #1e3a5f;
-    padding-left: 5px;
-    text-transform: capitalize;
+  font-size: 11px;
+  color: #1e3a5f;
+  padding-left: 5px;
+  text-transform: capitalize;
 }
 
 p.email {
-    color: #2c2c2c;
+  color: #2c2c2c;
 }
 
 p.pass {
-    font-size: 11px;
-    color: #706e6e;
+  font-size: 11px;
+  color: #706e6e;
 }
 
 .sub-text-end p {
-    font-size: 10px;
-    text-align: center;
-    color: #707e91;
+  font-size: 10px;
+  text-align: center;
+  color: #707e91;
 }
-.pl-3{
-    padding-left: 2px;
+.pl-3 {
+  padding-left: 2px;
 }
 .text-copy {
-    font-size: 11px;
-    color: #afafafc2;
-    position: relative;
-    top: 4rem;
+  font-size: 11px;
+  color: #afafafc2;
+  position: relative;
+  top: 4rem;
 }
 svg.icon-search {
-    position: absolute;
-    top: 0px;
-    margin: auto;
-    bottom: 0px;
-    left: 1.8rem;
-    filter: opacity(0.5);
-        width: 19px;
+  position: absolute;
+  top: 0px;
+  margin: auto;
+  bottom: 0px;
+  left: 1.8rem;
+  filter: opacity(0.5);
+  width: 19px;
 }
-.pl-0{
-    padding-left: 0px!important;
+.pl-0 {
+  padding-left: 0px !important;
 }
 .form-search {
-    position: relative;
+  position: relative;
 }

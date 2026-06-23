@@ -13,15 +13,11 @@
     <link rel="stylesheet" href="assets/css/sidebar.css">
     <link rel="stylesheet" href="assets/css/collapse-description.css">
     <link rel="stylesheet" href="assets/css/case-details.css">
-
-
 </head>
-
 <body>
     <div class="container-fluid color-general">
         <div class="row">
             <div class="col-12 d-flex sidebar-p">
-
                 <div id="sidebar-container"></div>
                 <div class="container-fluid container-lg content-main">
                     <div class="row d-flex justify-content-between p-3 pt-4">
@@ -42,7 +38,6 @@
                                         </div>
 
                                     </div>
-
                                 </div>
                                 <div class="col-12">
                                     <div class="top-info d-flex row">
@@ -50,7 +45,6 @@
 
                                             <h4>FPQRS-2026-04779
                                             </h4>
-
                                         </div>
                                         <div class="col-lg-7 col-10">
                                             <div class="d-lg-flex d-block pill-general">
@@ -69,8 +63,6 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
 
@@ -81,7 +73,7 @@
                         </div>
                         <div class="col-lg-2 col-12 d-lg-flex justify-content-end">
                             <button class="flex btn-case mb-sm-3" data-bs-toggle="modal"
-                                                data-bs-target="#reasignarModal">
+                                data-bs-target="#reasignarModal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-user-check" aria-hidden="true">
@@ -118,7 +110,6 @@
                                                 inmediata.</p>
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                         </div>
@@ -162,7 +153,6 @@
 
                                                         Av El Poblado #12-45, Medellín</p>
                                                 </div>
-
                                             </div>
                                         </div>
                                     </div>
@@ -190,9 +180,6 @@
                                                     <p>
                                                         Pago PSE</p>
                                                 </div>
-
-
-
                                                 <div class="item">
                                                     <p>Subcategoría</p>
                                                     <p>Pago PSE no acreditado en destino</p>
@@ -218,8 +205,6 @@
                                                     </p>
                                                     <p class="text-danger">05/05/2026 03:00</p>
                                                 </div>
-
-
                                                 <div class="item">
                                                     <p>Tipo de causa
 
@@ -231,7 +216,6 @@
                                     </div>
                                 </div>
                             </div>
-
                             <div class="col-12">
                                 <div class="card mb-4 mt-1">
                                     <div class="flex collapse-description overflow-x-auto tabs-container">
@@ -316,7 +300,6 @@
                                                 acreditado. Código: PSE-20260503-8847.</p>
                                         </div>
                                         <div class="tab-pane" id="tab-comments">
-                                            <!-- Cabecera -->
                                             <div class="comments-header">
                                                 <div class="comments-title">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -347,49 +330,77 @@
                                                     Agregar comentario
                                                 </button>
                                             </div>
-
-                                            <!-- Panel nuevo comentario -->
                                             <div class="new-comment-panel d-none" id="newCommentPanel">
                                                 <div class="new-comment-header">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5v14"/></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2.5" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <path d="M5 12h14" />
+                                                        <path d="M12 5v14" />
+                                                    </svg>
                                                     NUEVO COMENTARIO
                                                 </div>
                                                 <div class="new-comment-body">
                                                     <div class="new-comment-field-group">
-                                                        <label class="new-comment-field-label">TIPO DE COMENTARIO <span class="new-comment-required">*</span></label>
+                                                        <label class="new-comment-field-label">TIPO DE COMENTARIO <span
+                                                                class="new-comment-required">*</span></label>
                                                         <div class="new-comment-type-options">
                                                             <label class="new-comment-radio-label" id="labelInterno">
-                                                                <input type="radio" name="commentType" value="interno" checked>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                                                                <input type="radio" name="commentType" value="interno"
+                                                                    checked>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <rect width="18" height="11" x="3" y="11" rx="2"
+                                                                        ry="2" />
+                                                                    <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                                                                </svg>
                                                                 Interno
                                                             </label>
                                                             <label class="new-comment-radio-label" id="labelVisible">
                                                                 <input type="radio" name="commentType" value="visible">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path
+                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                                                    <circle cx="12" cy="12" r="3" />
+                                                                </svg>
                                                                 Visible para el asociado
                                                             </label>
                                                         </div>
-                                                        <p class="new-comment-hint" id="commentTypeHint">Solo visible para operadores internos del sistema.</p>
+                                                        <p class="new-comment-hint" id="commentTypeHint">Solo visible
+                                                            para operadores internos del sistema.</p>
                                                     </div>
                                                     <div class="new-comment-field-group">
-                                                        <label class="new-comment-field-label">COMENTARIO <span class="new-comment-required">*</span></label>
-                                                        <textarea class="new-comment-textarea" id="newCommentTextarea" placeholder="Escriba el comentario del caso..."></textarea>
-                                                        <p class="new-comment-char-count"><span id="newCommentCharCount">0</span> caracteres</p>
+                                                        <label class="new-comment-field-label">COMENTARIO <span
+                                                                class="new-comment-required">*</span></label>
+                                                        <textarea class="new-comment-textarea" id="newCommentTextarea"
+                                                            placeholder="Escriba el comentario del caso..."></textarea>
+                                                        <p class="new-comment-char-count"><span
+                                                                id="newCommentCharCount">0</span> caracteres</p>
                                                     </div>
                                                     <div class="new-comment-footer">
-                                                        <button class="btn-comment-cancel" id="btnCommentCancel">Cancelar</button>
+                                                        <button class="btn-comment-cancel"
+                                                            id="btnCommentCancel">Cancelar</button>
                                                         <button class="btn-comment-save">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="14" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="22" y1="2" x2="11" y2="13" />
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2" />
+                                                            </svg>
                                                             Guardar comentario
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- Lista de comentarios -->
                                             <div id="commentsList">
-
-                                                <div class="comment-card row" data-type="interno">
+                                              <div class="comment-card row" data-type="interno">
                                                     <div class="comment-avatar">J</div>
                                                     <div class="comment-content col-12">
                                                         <div class="comment-top">
@@ -427,13 +438,12 @@
                                                             04/05/2026 18:50 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
                                                     </div>
-                                                      <div class="comment-body col-12">
-                                                            Se solicita validación al área de cartera sobre el estado de
-                                                            la transacción PSE. El débito fue aplicado pero no se
-                                                            refleja acreditación en el banco destino.
-                                                        </div>
+                                                    <div class="comment-body col-12">
+                                                        Se solicita validación al área de cartera sobre el estado de
+                                                        la transacción PSE. El débito fue aplicado pero no se
+                                                        refleja acreditación en el banco destino.
+                                                    </div>
                                                 </div>
-
                                                 <div class="comment-card row" data-type="visible">
                                                     <div class="comment-avatar">L</div>
                                                     <div class="comment-content col-12">
@@ -472,15 +482,13 @@
                                                             </svg>
                                                             04/05/2026 19:14 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
-                                                        
                                                     </div>
-                                                     <div class="comment-body col-12">
-                                                            Estimado asociado, hemos recibido su caso y estamos
-                                                            verificando el estado de la transacción con el área de
-                                                            cartera. Le informaremos en un plazo máximo de 24 horas.
-                                                        </div>
+                                                    <div class="comment-body col-12">
+                                                        Estimado asociado, hemos recibido su caso y estamos
+                                                        verificando el estado de la transacción con el área de
+                                                        cartera. Le informaremos en un plazo máximo de 24 horas.
+                                                    </div>
                                                 </div>
-
                                                 <div class="comment-card row" data-type="interno">
                                                     <div class="comment-avatar">C</div>
                                                     <div class="comment-content">
@@ -518,14 +526,13 @@
                                                             </svg>
                                                             05/05/2026 08:22 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
-                                                       
                                                     </div>
-                                                     <div class="comment-body col-12">
-                                                            Se escala a Davivienda para confirmación de recepción del
-                                                            débito PSE-20260503-8847. Se adjunta comprobante de débito
-                                                            exitoso en origen. Caso prioridad crítica, requiere
-                                                            respuesta en máximo 4h.
-                                                        </div>
+                                                    <div class="comment-body col-12">
+                                                        Se escala a Davivienda para confirmación de recepción del
+                                                        débito PSE-20260503-8847. Se adjunta comprobante de débito
+                                                        exitoso en origen. Caso prioridad crítica, requiere
+                                                        respuesta en máximo 4h.
+                                                    </div>
                                                 </div>
 
                                                 <div class="comments-empty d-none" id="commentsEmpty">
@@ -535,7 +542,6 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-attachments">
-                                            <!-- Cabecera -->
                                             <div class="attach-header">
                                                 <div class="attach-title">
                                                     <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15"
@@ -563,26 +569,48 @@
                                                     Cargar adjunto
                                                 </button>
                                             </div>
-
-                                            <!-- Panel cargar adjunto -->
                                             <div class="upload-panel d-none" id="uploadPanel">
                                                 <div class="upload-panel-header">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                                        <polyline points="17 8 12 3 7 8" />
+                                                        <line x1="12" y1="3" x2="12" y2="15" />
+                                                    </svg>
                                                     CARGAR NUEVO ADJUNTO
                                                 </div>
                                                 <div class="upload-panel-body">
                                                     <div class="upload-dropzone" id="uploadDropzone">
-                                                        <input type="file" id="uploadFileInput" class="upload-file-input" accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg,.mp3,.mp4,.wav,.avi">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="upload-dropzone-icon"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
-                                                        <p class="upload-dropzone-text">Haga clic o arrastre un archivo aquí</p>
-                                                        <p class="upload-dropzone-hint">PDF, Word, Excel, imágenes, audio, video · Máx. 20 MB</p>
+                                                        <input type="file" id="uploadFileInput"
+                                                            class="upload-file-input"
+                                                            accept=".pdf,.doc,.docx,.xls,.xlsx,.png,.jpg,.jpeg,.mp3,.mp4,.wav,.avi">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="1.5" stroke-linecap="round"
+                                                            stroke-linejoin="round" class="upload-dropzone-icon">
+                                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                                            <polyline points="17 8 12 3 7 8" />
+                                                            <line x1="12" y1="3" x2="12" y2="15" />
+                                                        </svg>
+                                                        <p class="upload-dropzone-text">Haga clic o arrastre un archivo
+                                                            aquí</p>
+                                                        <p class="upload-dropzone-hint">PDF, Word, Excel, imágenes,
+                                                            audio, video · Máx. 20 MB</p>
                                                     </div>
                                                     <div class="upload-security-notice">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-                                                        Solo se permiten archivos seguros. Ejecutables, scripts y archivos comprimidos están bloqueados.
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round">
+                                                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                                                        </svg>
+                                                        Solo se permiten archivos seguros. Ejecutables, scripts y
+                                                        archivos comprimidos están bloqueados.
                                                     </div>
                                                     <div class="upload-field-group">
-                                                        <label class="upload-field-label">TIPO DE ADJUNTO <span class="upload-required">*</span></label>
+                                                        <label class="upload-field-label">TIPO DE ADJUNTO <span
+                                                                class="upload-required">*</span></label>
                                                         <select class="upload-select">
                                                             <option value="gestion">Gestión interna</option>
                                                             <option value="registro">Registro inicial</option>
@@ -593,33 +621,69 @@
                                                         <label class="upload-field-label">VISIBILIDAD</label>
                                                         <div class="upload-visibility">
                                                             <label class="upload-radio-label">
-                                                                <input type="radio" name="uploadVisibility" value="interno" checked>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94"/><path d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19"/><line x1="2" y1="2" x2="22" y2="22"/></svg>
+                                                                <input type="radio" name="uploadVisibility"
+                                                                    value="interno" checked>
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path
+                                                                        d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94" />
+                                                                    <path
+                                                                        d="M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19" />
+                                                                    <line x1="2" y1="2" x2="22" y2="22" />
+                                                                </svg>
                                                                 Solo interno
                                                             </label>
                                                             <label class="upload-radio-label">
-                                                                <input type="radio" name="uploadVisibility" value="visible">
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+                                                                <input type="radio" name="uploadVisibility"
+                                                                    value="visible">
+                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                    height="14" viewBox="0 0 24 24" fill="none"
+                                                                    stroke="currentColor" stroke-width="2"
+                                                                    stroke-linecap="round" stroke-linejoin="round">
+                                                                    <path
+                                                                        d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />
+                                                                    <circle cx="12" cy="12" r="3" />
+                                                                </svg>
                                                                 Visible al asociado
                                                             </label>
                                                         </div>
                                                     </div>
                                                     <div class="upload-panel-footer">
-                                                        <button class="btn-upload-cancel" id="btnUploadCancel">Cancelar</button>
+                                                        <button class="btn-upload-cancel"
+                                                            id="btnUploadCancel">Cancelar</button>
                                                         <button class="btn-upload-confirm">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="14" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                                                <polyline points="17 8 12 3 7 8" />
+                                                                <line x1="12" y1="3" x2="12" y2="15" />
+                                                            </svg>
                                                             Cargar archivo
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <!-- Lista de adjuntos -->
                                             <div class="attach-list" id="attachList">
-
                                                 <div class="attach-card" data-type="pdf">
                                                     <div class="attach-icon attach-icon-pdf">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-primary" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                            stroke-width="2" stroke-linecap="round"
+                                                            stroke-linejoin="round"
+                                                            class="lucide lucide-file-text text-primary"
+                                                            aria-hidden="true">
+                                                            <path
+                                                                d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z">
+                                                            </path>
+                                                            <path d="M14 2v5a1 1 0 0 0 1 1h5"></path>
+                                                            <path d="M10 9H8"></path>
+                                                            <path d="M16 13H8"></path>
+                                                            <path d="M16 17H8"></path>
+                                                        </svg>
                                                     </div>
                                                     <div class="attach-info">
                                                         <div class="attach-name-row">
@@ -652,7 +716,6 @@
                                                         </svg>
                                                     </button>
                                                 </div>
-
                                                 <div class="attach-card" data-type="png">
                                                     <div class="attach-icon attach-icon-img">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -695,7 +758,6 @@
                                                         </svg>
                                                     </button>
                                                 </div>
-
                                                 <div class="attach-card" data-type="pdf">
                                                     <div class="attach-icon attach-icon-pdf">
                                                         <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
@@ -738,624 +800,650 @@
                                                         </svg>
                                                     </button>
                                                 </div>
-
                                                 <div class="attach-empty d-none" id="attachEmpty">
                                                     <p>No hay adjuntos para este tipo.</p>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-history">
-                                        <div class="history-panel m-3">
-                                            <div class="history-heading">
-                                                <div>
-                                                    <div class="history-title">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <polyline points="12 6 12 12 16 14"></polyline>
-                                                        </svg>
-                                                        <span>Línea de tiempo del caso</span>
+                                            <div class="history-panel m-3">
+                                                <div class="history-heading">
+                                                    <div>
+                                                        <div class="history-title">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <polyline points="12 6 12 12 16 14"></polyline>
+                                                            </svg>
+                                                            <span>Línea de tiempo del caso</span>
+                                                        </div>
+                                                        <p class="history-subtitle">22 eventos registrados · Solo
+                                                            lectura
+                                                        </p>
                                                     </div>
-                                                    <p class="history-subtitle">22 eventos registrados · Solo lectura
-                                                    </p>
                                                 </div>
-                                            </div>
-
-                                            <div class="history-summary" aria-label="Resumen de eventos">
-                                                <span class="history-chip chip-created">1 creación</span>
-                                                <span class="history-chip chip-assigned">1 asignación</span>
-                                                <span class="history-chip chip-status">2 estado</span>
-                                                <span class="history-chip chip-reassigned">2 reasignación</span>
-                                                <span class="history-chip chip-priority">1 prioridad</span>
-                                                <span class="history-chip chip-response">1 respuesta</span>
-                                                <span class="history-chip chip-observation">2 observación</span>
-                                                <span class="history-chip chip-comment">3 comentario</span>
-                                                <span class="history-chip chip-attachment-initial">2 adjunto
-                                                    inicial</span>
-                                                <span class="history-chip chip-attachment-loaded">3 adjunto
-                                                    cargado</span>
-                                                <span class="history-chip chip-close">1 modific. cierre</span>
-                                            </div>
-
-                                            <div class="history-filter-row">
-                                                <svg class="history-filter-icon" xmlns="http://www.w3.org/2000/svg"
-                                                    width="16" height="16" viewBox="0 0 24 24" fill="none"
-                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                    stroke-linejoin="round">
-                                                    <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3">
-                                                    </polygon>
-                                                </svg>
-                                                <div class="history-filters" role="tablist"
-                                                    aria-label="Filtrar historial">
-                                                    <button class="history-filter active"
-                                                        data-history-filter="all">Todos 19</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="created">creacion 1</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="assigned">asignacion 1</button>
-                                                    <button class="history-filter" data-history-filter="status">Estado
-                                                        2</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="reassigned">reasignacion 2</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="priority">Prioridad 1</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="response">Respuesta 1</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="observation">observaciones 2</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="comment">Comentario 3</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="attachment-initial">Adjunto inicial
-                                                        2</button>
-                                                    <button class="history-filter"
-                                                        data-history-filter="attachment-loaded">Adjunto cargado
-                                                        3</button>
-                                                    <button class="history-filter" data-history-filter="close">Modific.
-                                                        cierre 1</button>
+                                                <div class="history-summary" aria-label="Resumen de eventos">
+                                                    <span class="history-chip chip-created">1 creación</span>
+                                                    <span class="history-chip chip-assigned">1 asignación</span>
+                                                    <span class="history-chip chip-status">2 estado</span>
+                                                    <span class="history-chip chip-reassigned">2 reasignación</span>
+                                                    <span class="history-chip chip-priority">1 prioridad</span>
+                                                    <span class="history-chip chip-response">1 respuesta</span>
+                                                    <span class="history-chip chip-observation">2 observación</span>
+                                                    <span class="history-chip chip-comment">3 comentario</span>
+                                                    <span class="history-chip chip-attachment-initial">2 adjunto
+                                                        inicial</span>
+                                                    <span class="history-chip chip-attachment-loaded">3 adjunto
+                                                        cargado</span>
+                                                    <span class="history-chip chip-close">1 modific. cierre</span>
                                                 </div>
-                                            </div>
 
-                                            <div class="history-timeline" id="historyTimeline">
-                                                <article class="history-event type-reassigned"
-                                                    data-history-type="reassigned">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                                            <circle cx="9" cy="7" r="4"></circle>
-                                                            <polyline points="16 11 18 13 22 9"></polyline>
-                                                        </svg>
+                                                <div class="history-filter-row">
+                                                    <svg class="history-filter-icon" xmlns="http://www.w3.org/2000/svg"
+                                                        width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                        stroke-linejoin="round">
+                                                        <polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3">
+                                                        </polygon>
+                                                    </svg>
+                                                    <div class="history-filters" role="tablist"
+                                                        aria-label="Filtrar historial">
+                                                        <button class="history-filter active"
+                                                            data-history-filter="all">Todos 19</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="created">creacion 1</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="assigned">asignacion 1</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="status">Estado
+                                                            2</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="reassigned">reasignacion 2</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="priority">Prioridad 1</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="response">Respuesta 1</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="observation">observaciones 2</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="comment">Comentario 3</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="attachment-initial">Adjunto inicial
+                                                            2</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="attachment-loaded">Adjunto cargado
+                                                            3</button>
+                                                        <button class="history-filter"
+                                                            data-history-filter="close">Modific.
+                                                            cierre 1</button>
                                                     </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-reassigned">reasignacion
-                                                                de caso</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>04/05/2026 17:55</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                </div>
+                                                <div class="history-timeline" id="historyTimeline">
+                                                    <article class="history-event type-reassigned"
+                                                        data-history-type="reassigned">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="9" cy="7" r="4"></circle>
+                                                                <polyline points="16 11 18 13 22 9"></polyline>
+                                                            </svg>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <div class="history-change">
-                                                                <span class="history-person muted"><b>J</b> Jorge ivan
-                                                                    Castillo</span>
-                                                                <span class="history-arrow">
-                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-purple-400 shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                                                                </span>
-                                                                <span class="history-person current"><b>R</b> Rodrigo
-                                                                    Esteban muñoz</span>
-                                                            </div>
-                                                            <p><strong>Comentario:</strong> Reasignado al especialista
-                                                                de pagos electronico por tratarse de un caso PSE
-                                                                critico.</p>
-                                                            <div class="history-author"><span>R</span> Ricardo paez
-                                                                Montoya Supervisor</div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-created" data-history-type="created">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <circle cx="12" cy="12" r="10"></circle>
-                                                            <path d="M8 12h8"></path>
-                                                            <path d="M12 8v8"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-created">Caso creado</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>04/05/2026 18:00</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="history-event-body">
-                                                            <p>Caso radicado por el asociado a travez del canal App
-                                                                 Pago PSE por $2.350.000 sin acreditacion en
-                                                                destino.</p>
-                                                            <div class="history-author"><span>J</span> Jorge Luis
-                                                                 perez  Asociado</div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-assigned"
-                                                    data-history-type="assigned">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
-                                                            <circle cx="9" cy="7" r="4"></circle>
-                                                            <path d="m16 11 2 2 4-4"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-assigned">Asignacion
-                                                                inicial</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>04/05/2026 18:03</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="history-event-body">
-                                                            <div class="history-change">
-                                                                <span class="history-person muted"><b>S</b>
-                                                                    Sistema</span>
-                                                                <span class="history-arrow">
-                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-purple-400 shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                                                               
-                                                                </span>
-                                                                <span class="history-person current"><b>V</b> Valentina
-                                                                    Ospina</span>
-                                                            </div>
-                                                            <p>asignacion automatica por servicio Pagos y
-                                                                Transferencias.</p>
-                                                        </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-status" data-history-type="status">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path d="M20 6 9 17l-5-5"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-status">Cambio de
-                                                                estado</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>04/05/2026 18:20</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="history-event-body">
-                                                            <div class="history-change">
-                                                                <span class="history-state">Radicado</span>
-                                                                <span class="history-arrow">
-                                                                         <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-purple-400 shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                                                               
-                                                                </span>
-                                                                <span class="history-state active-state">En
-                                                                    gestion</span>
-                                                            </div>
-                                                            <p>El caso inicia validacion con el area de canales
-                                                                digitales.</p>
-                                                        </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-comment" data-history-type="comment">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-comment">Comentario
-                                                                interno</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 09:10</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="history-event-body">
-                                                            <p>Se solicita validacion al area de cartera sobre el
-                                                                estado de la transaccion PSE.</p>
-                                                            <div class="history-author"><span>R</span> Rodrigo Esteban
-                                                                muestra Especialista</div>
-                                                        </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-priority"
-                                                    data-history-type="priority">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
-                                                            </path>
-                                                            <line x1="12" y1="9" x2="12" y2="13"></line>
-                                                            <line x1="12" y1="17" x2="12.01" y2="17"></line>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-priority">Prioridad
-                                                                actualizada</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 09:30</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                        <div class="history-event-body">
-                                                            <div class="history-change">
-                                                                <span class="history-state">Alta</span>
-                                                                <span class="history-arrow">     <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-arrow-right text-purple-400 shrink-0" aria-hidden="true"><path d="M5 12h14"></path><path d="m12 5 7 7-7 7"></path></svg>
-                                                               </span>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
                                                                 <span
-                                                                    class="history-state active-priority">critica</span>
+                                                                    class="history-badge badge-reassigned">reasignacion
+                                                                    de caso</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>04/05/2026 17:55</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
                                                             </div>
-                                                            <p>El SLA se recalcula a 4 horas por afectacion en pago
-                                                                PSE.</p>
+                                                            <div class="history-event-body">
+                                                                <div class="history-change">
+                                                                    <span class="history-person muted"><b>J</b> Jorge
+                                                                        ivan
+                                                                        Castillo</span>
+                                                                    <span class="history-arrow">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="12" height="12" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="lucide lucide-arrow-right text-purple-400 shrink-0"
+                                                                            aria-hidden="true">
+                                                                            <path d="M5 12h14"></path>
+                                                                            <path d="m12 5 7 7-7 7"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span class="history-person current"><b>R</b>
+                                                                        Rodrigo
+                                                                        Esteban muñoz</span>
+                                                                </div>
+                                                                <p><strong>Comentario:</strong> Reasignado al
+                                                                    especialista
+                                                                    de pagos electronico por tratarse de un caso PSE
+                                                                    critico.</p>
+                                                                <div class="history-author"><span>R</span> Ricardo paez
+                                                                    Montoya Supervisor</div>
+                                                            </div>
                                                         </div>
-                                                    </div>
-                                                </article>
+                                                    </article>
+                                                    <article class="history-event type-created"
+                                                        data-history-type="created">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <circle cx="12" cy="12" r="10"></circle>
+                                                                <path d="M8 12h8"></path>
+                                                                <path d="M12 8v8"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-created">Caso
+                                                                    creado</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>04/05/2026 18:00</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Caso radicado por el asociado a travez del canal App
+                                                                    Pago PSE por $2.350.000 sin acreditacion en
+                                                                    destino.</p>
+                                                                <div class="history-author"><span>J</span> Jorge Luis
+                                                                    perez Asociado</div>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="history-event type-assigned"
+                                                        data-history-type="assigned">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2">
+                                                                </path>
+                                                                <circle cx="9" cy="7" r="4"></circle>
+                                                                <path d="m16 11 2 2 4-4"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-assigned">Asignacion
+                                                                    inicial</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>04/05/2026 18:03</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <div class="history-change">
+                                                                    <span class="history-person muted"><b>S</b>
+                                                                        Sistema</span>
+                                                                    <span class="history-arrow">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="12" height="12" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="lucide lucide-arrow-right text-purple-400 shrink-0"
+                                                                            aria-hidden="true">
+                                                                            <path d="M5 12h14"></path>
+                                                                            <path d="m12 5 7 7-7 7"></path>
+                                                                        </svg>
 
-                                                <article class="history-event type-response"
-                                                    data-history-type="response">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="M22 17a2 2 0 0 1-2 2H6.8a2 2 0 0 0-1.4.6L2 22V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-response">Respuesta
-                                                                enviada</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 10:15</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                                    </span>
+                                                                    <span class="history-person current"><b>V</b>
+                                                                        Valentina
+                                                                        Ospina</span>
+                                                                </div>
+                                                                <p>asignacion automatica por servicio Pagos y
+                                                                    Transferencias.</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <p>Se informa al asociado que el caso esta en validacion
-                                                                con la pasarela de pago.</p>
+                                                    </article>
+                                                    <article class="history-event type-status"
+                                                        data-history-type="status">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M20 6 9 17l-5-5"></path>
+                                                            </svg>
                                                         </div>
-                                                    </div>
-                                                </article>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-status">Cambio de
+                                                                    estado</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>04/05/2026 18:20</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <div class="history-change">
+                                                                    <span class="history-state">Radicado</span>
+                                                                    <span class="history-arrow">
+                                                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                                                            width="12" height="12" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="lucide lucide-arrow-right text-purple-400 shrink-0"
+                                                                            aria-hidden="true">
+                                                                            <path d="M5 12h14"></path>
+                                                                            <path d="m12 5 7 7-7 7"></path>
+                                                                        </svg>
 
-                                                <article class="history-event type-observation"
-                                                    data-history-type="observation">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path d="M4 6h16"></path>
-                                                            <path d="M4 12h16"></path>
-                                                            <path d="M4 18h10"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-observation">Observacion
-                                                                registrada</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 10:45</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                                    </span>
+                                                                    <span class="history-state active-state">En
+                                                                        gestion</span>
+                                                                </div>
+                                                                <p>El caso inicia validacion con el area de canales
+                                                                    digitales.</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <p>Validacion pendiente de respuesta del banco destino.</p>
+                                                    </article>
+                                                    <article class="history-event type-comment"
+                                                        data-history-type="comment">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path
+                                                                    d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z">
+                                                                </path>
+                                                            </svg>
                                                         </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-attachment-initial"
-                                                    data-history-type="attachment-initial">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551">
-                                                            </path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-attachment-initial">Adjunto
-                                                                inicial</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>04/05/2026 18:01</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-comment">Comentario
+                                                                    interno</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 09:10</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Se solicita validacion al area de cartera sobre el
+                                                                    estado de la transaccion PSE.</p>
+                                                                <div class="history-author"><span>R</span> Rodrigo
+                                                                    Esteban
+                                                                    muestra Especialista</div>
+                                                            </div>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <p>Comprobante_PSE_04779.pdf y captura_app_pago.png
-                                                                asociados al radicado.</p>
+                                                    </article>
+                                                    <article class="history-event type-priority"
+                                                        data-history-type="priority">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path
+                                                                    d="M10.29 3.86 1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z">
+                                                                </path>
+                                                                <line x1="12" y1="9" x2="12" y2="13"></line>
+                                                                <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                                                            </svg>
                                                         </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-attachment-loaded"
-                                                    data-history-type="attachment-loaded">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
-                                                            <polyline points="17 8 12 3 7 8"></polyline>
-                                                            <line x1="12" y1="3" x2="12" y2="15"></line>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-attachment-loaded">Adjunto
-                                                                cargado</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 11:05</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-priority">Prioridad
+                                                                    actualizada</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 09:30</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <div class="history-change">
+                                                                    <span class="history-state">Alta</span>
+                                                                    <span class="history-arrow"> <svg
+                                                                            xmlns="http://www.w3.org/2000/svg"
+                                                                            width="12" height="12" viewBox="0 0 24 24"
+                                                                            fill="none" stroke="currentColor"
+                                                                            stroke-width="2" stroke-linecap="round"
+                                                                            stroke-linejoin="round"
+                                                                            class="lucide lucide-arrow-right text-purple-400 shrink-0"
+                                                                            aria-hidden="true">
+                                                                            <path d="M5 12h14"></path>
+                                                                            <path d="m12 5 7 7-7 7"></path>
+                                                                        </svg>
+                                                                    </span>
+                                                                    <span
+                                                                        class="history-state active-priority">critica</span>
+                                                                </div>
+                                                                <p>El SLA se recalcula a 4 horas por afectacion en pago
+                                                                    PSE.</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <p>Se cargas soporte de validacion de pasarela PSE en
-                                                                formato PDF.</p>
+                                                    </article>
+                                                    <article class="history-event type-response"
+                                                        data-history-type="response">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path
+                                                                    d="M22 17a2 2 0 0 1-2 2H6.8a2 2 0 0 0-1.4.6L2 22V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                                                                </path>
+                                                            </svg>
                                                         </div>
-                                                    </div>
-                                                </article>
-
-                                                <article class="history-event type-close" data-history-type="close">
-                                                    <div class="history-marker">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="2" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2">
-                                                            </rect>
-                                                            <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                                        </svg>
-                                                    </div>
-                                                    <div class="history-card">
-                                                        <div class="history-card-top">
-                                                            <span class="history-badge badge-close">Modific.
-                                                                cierre</span>
-                                                            <button class="history-toggle" aria-label="Colapsar evento">
-                                                                <span>05/05/2026 11:35</span>
-                                                                <svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                                                    height="14" viewBox="0 0 24 24" fill="none"
-                                                                    stroke="currentColor" stroke-width="2"
-                                                                    stroke-linecap="round" stroke-linejoin="round">
-                                                                    <path d="m6 9 6 6 6-6"></path>
-                                                                </svg>
-                                                            </button>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-response">Respuesta
+                                                                    enviada</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 10:15</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Se informa al asociado que el caso esta en validacion
+                                                                    con la pasarela de pago.</p>
+                                                            </div>
                                                         </div>
-                                                        <div class="history-event-body">
-                                                            <p>Se actualizan  la causal de cierre preliminar: falla en
-                                                                pasarela de pago PSE.</p>
+                                                    </article>
+                                                    <article class="history-event type-observation"
+                                                        data-history-type="observation">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M4 6h16"></path>
+                                                                <path d="M4 12h16"></path>
+                                                                <path d="M4 18h10"></path>
+                                                            </svg>
                                                         </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span
+                                                                    class="history-badge badge-observation">Observacion
+                                                                    registrada</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 10:45</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Validacion pendiente de respuesta del banco destino.
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="history-event type-attachment-initial"
+                                                        data-history-type="attachment-initial">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path
+                                                                    d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551">
+                                                                </path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span
+                                                                    class="history-badge badge-attachment-initial">Adjunto
+                                                                    inicial</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>04/05/2026 18:01</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Comprobante_PSE_04779.pdf y captura_app_pago.png
+                                                                    asociados al radicado.</p>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="history-event type-attachment-loaded"
+                                                        data-history-type="attachment-loaded">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4">
+                                                                </path>
+                                                                <polyline points="17 8 12 3 7 8"></polyline>
+                                                                <line x1="12" y1="3" x2="12" y2="15"></line>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span
+                                                                    class="history-badge badge-attachment-loaded">Adjunto
+                                                                    cargado</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 11:05</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Se cargas soporte de validacion de pasarela PSE en
+                                                                    formato PDF.</p>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <article class="history-event type-close" data-history-type="close">
+                                                        <div class="history-marker">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="18"
+                                                                height="18" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2">
+                                                                </rect>
+                                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="history-card">
+                                                            <div class="history-card-top">
+                                                                <span class="history-badge badge-close">Modific.
+                                                                    cierre</span>
+                                                                <button class="history-toggle"
+                                                                    aria-label="Colapsar evento">
+                                                                    <span>05/05/2026 11:35</span>
+                                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                        height="14" viewBox="0 0 24 24" fill="none"
+                                                                        stroke="currentColor" stroke-width="2"
+                                                                        stroke-linecap="round" stroke-linejoin="round">
+                                                                        <path d="m6 9 6 6 6-6"></path>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="history-event-body">
+                                                                <p>Se actualizan la causal de cierre preliminar: falla
+                                                                    en
+                                                                    pasarela de pago PSE.</p>
+                                                            </div>
+                                                        </div>
+                                                    </article>
+                                                    <div class="history-empty d-none" id="historyEmpty">
+                                                        <p>No hay eventos para este filtro.</p>
                                                     </div>
-                                                </article>
-
-                                                <div class="history-empty d-none" id="historyEmpty">
-                                                    <p>No hay eventos para este filtro.</p>
                                                 </div>
                                             </div>
-                                        </div>
                                         </div>
                                         <div class="tab-pane" id="tab-responses">
-                                            <!-- Redactar respuesta -->
                                             <div class="response-compose-card">
                                                 <div class="response-compose-label">
-                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                        <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                    </svg>
                                                     REDACTAR RESPUESTA AL ASOCIADO
                                                 </div>
                                                 <div class="response-compose-body">
                                                     <div class="response-field">
                                                         <span class="response-field-label">PARA</span>
-                                                        <span class="response-field-value">jl.patino@empresa.com.co</span>
+                                                        <span
+                                                            class="response-field-value">jl.patino@empresa.com.co</span>
                                                     </div>
                                                     <div class="response-field">
                                                         <span class="response-field-label">ASUNTO</span>
-                                                        <input type="text" class="response-subject-input" value="Re: Caso FPQRS-2026-04779">
+                                                        <input type="text" class="response-subject-input"
+                                                            value="Re: Caso FPQRS-2026-04779">
                                                     </div>
-                                                    <textarea class="response-textarea" placeholder="Escriba aquí la respuesta para el asociado..."></textarea>
+                                                    <textarea class="response-textarea"
+                                                        placeholder="Escriba aquí la respuesta para el asociado..."></textarea>
                                                     <div class="response-compose-footer">
                                                         <button class="btn-attach-file">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551"></path></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="14" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <path
+                                                                    d="m16 6-8.414 8.586a2 2 0 0 0 2.829 2.829l8.414-8.586a4 4 0 1 0-5.657-5.657l-8.379 8.551a6 6 0 1 0 8.485 8.485l8.379-8.551">
+                                                                </path>
+                                                            </svg>
                                                             Adjuntar archivo
                                                         </button>
                                                         <button class="btn-send-response">
-                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                                                height="14" viewBox="0 0 24 24" fill="none"
+                                                                stroke="currentColor" stroke-width="2"
+                                                                stroke-linecap="round" stroke-linejoin="round">
+                                                                <line x1="22" y1="2" x2="11" y2="13"></line>
+                                                                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                                                            </svg>
                                                             Enviar respuesta
                                                         </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!-- Respuestas enviadas -->
-                                           <div class="conten-alert m-4">
-                                             <p class="responses-sent-label">RESPUESTAS ENVIADAS AL ASOCIADO</p>
-                                            <div class="response-sent-card">
-                                                <div class="response-sent-top">
-                                                    <span class="response-sent-badge">Respuesta enviada</span>
-                                                    <span class="response-sent-date">04/05/2026 20:15</span>
+                                            <div class="conten-alert m-4">
+                                                <p class="responses-sent-label">RESPUESTAS ENVIADAS AL ASOCIADO</p>
+                                                <div class="response-sent-card">
+                                                    <div class="response-sent-top">
+                                                        <span class="response-sent-badge">Respuesta enviada</span>
+                                                        <span class="response-sent-date">04/05/2026 20:15</span>
+                                                    </div>
+                                                    <p class="response-sent-body">PSE requiere soporte adicional del
+                                                        asociado: comprobante de pago y pantallazos.</p>
                                                 </div>
-                                                <p class="response-sent-body">PSE requiere soporte adicional del asociado: comprobante de pago y pantallazos.</p>
-                                            </div>
-                                           </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                         <div class="col-lg-4 col-12">
-                        <div class="col-12"></div>
-                        <div class="col-12 mb-3">
-                            <div class="card">
-                                <div class="card-actual pb-0">
-                                    <div class="row">
-                                        <div class="col-12 d-flex">
-
-                                            <p class="top-text">Estado actualo</p>
-                                        </div>
-                                        <div class="col-12">
-
-                                            <div class="personal-state">
-
-                                                <div class="item">
-                                                    <p class="sub-text">Estado</p>
-                                                    <p class="sub-text">Prioridad</p>
-                                                    <p class="sub-text">Responsable</p>
-                                                    <p class="sub-text">SLA
-                                                    </p>
-                                                </div>
-                                                <div class="item-rigth">
-                                                    <p class="status-pending ">Pendiente de Información
-                                                    </p>
-                                                    <p class="priority-critica" id="priorityBadge">Crítica</p>
-                                                    <p id="responsible-estado">Rodrigo Esteban Muñoz</p>
-                                                    <p id="slaValue">4h</p>
-                                                </div>
-
-
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12"></div>
-                        <div class="col-12 mb-3">
-                            <div class="card card-actual">
-                                <div class="row">
-                                    <div class="col-12 d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-settings text-primary" aria-hidden="true">
-                                            <path
-                                                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
-                                            </path>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>
-                                        <p>Cambiar estado</p>
-                                    </div>
-                                    <div class="relativ col-12">
-                                        <div class="dropdown">
-                                            <button class="btn btn-gray dropdown-toggle" type="button"
-                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                Pendiente de
-                                                Información
-                                            </button>
-                                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <div class="col-lg-4 col-12">
+                            <div class="col-12"></div>
+                            <div class="col-12 mb-3">
+                                <div class="card">
+                                    <div class="card-actual pb-0">
+                                        <div class="row">
+                                            <div class="col-12 d-flex">
 
-                                                <li><span class="dropdown-item d-flex align-items-center pill bg-blue"
-                                                        data-value="radicado">Radicado</span></li>
-                                                <li><span class="dropdown-item d-flex align-items-center pill bg-indigo"
-                                                        data-value="asignado"> Asignado</span></li>
-                                                <li><span
-                                                        class="dropdown-item d-flex align-items-center pill  bg-warning-subtle"
-                                                        data-value="gestion">En Gestión</span></li>
-                                                <li><span class="dropdown-item d-flex align-items-center pill  bg-green"
-                                                        data-value="respondido">Respondido</span></li>
-                                                <li><span
-                                                        class="dropdown-item d-flex align-items-center pill bg-danger-subtle"
-                                                        data-value="reabierto">Reabierto</span></li>
-                                            </ul>
+                                                <p class="top-text">Estado actualo</p>
+                                            </div>
+                                            <div class="col-12">
+
+                                                <div class="personal-state">
+
+                                                    <div class="item">
+                                                        <p class="sub-text">Estado</p>
+                                                        <p class="sub-text">Prioridad</p>
+                                                        <p class="sub-text">Responsable</p>
+                                                        <p class="sub-text">SLA
+                                                        </p>
+                                                    </div>
+                                                    <div class="item-rigth">
+                                                        <p class="status-pending ">Pendiente de Información
+                                                        </p>
+                                                        <p class="priority-critica" id="priorityBadge">Crítica</p>
+                                                        <p id="responsible-estado">Rodrigo Esteban Muñoz</p>
+                                                        <p id="slaValue">4h</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-
                                     </div>
-
                                 </div>
                             </div>
-                        </div>
-
-                        <div class="col-12 mb-3">
-                            <div class="card">
-                                <div class="card-actual">
+                            <div class="col-12"></div>
+                            <div class="col-12 mb-3">
+                                <div class="card card-actual">
                                     <div class="row">
                                         <div class="col-12 d-flex">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
@@ -1367,206 +1455,246 @@
                                                 </path>
                                                 <circle cx="12" cy="12" r="3"></circle>
                                             </svg>
-                                            <p>Cambiar prioridad</p>
-
+                                            <p>Cambiar estado</p>
                                         </div>
                                         <div class="relativ col-12">
-                                            <p>Solo se muestran las prioridades permitidas para esta categoría. El
-                                                SLA se recalculará automáticamente.</p>
-                                            <button type="button" class="btn btn-priority" data-bs-toggle="modal"
-                                                data-bs-target="#estadoModal">
-                                                <span>Prioridad actual:</span> <span id="estado">Alta</span>
-                                            </button>
-                                        </div>
+                                            <div class="dropdown">
+                                                <button class="btn btn-gray dropdown-toggle" type="button"
+                                                    id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                    aria-expanded="false">
+                                                    Pendiente de
+                                                    Información
+                                                </button>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
 
+                                                    <li><span
+                                                            class="dropdown-item d-flex align-items-center pill bg-blue"
+                                                            data-value="radicado">Radicado</span></li>
+                                                    <li><span
+                                                            class="dropdown-item d-flex align-items-center pill bg-indigo"
+                                                            data-value="asignado"> Asignado</span></li>
+                                                    <li><span
+                                                            class="dropdown-item d-flex align-items-center pill  bg-warning-subtle"
+                                                            data-value="gestion">En Gestión</span></li>
+                                                    <li><span
+                                                            class="dropdown-item d-flex align-items-center pill  bg-green"
+                                                            data-value="respondido">Respondido</span></li>
+                                                    <li><span
+                                                            class="dropdown-item d-flex align-items-center pill bg-danger-subtle"
+                                                            data-value="reabierto">Reabierto</span></li>
+                                                </ul>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 mb-3">
-                            <div class="card card-actual">
-                                <div class="row">
 
-                                    <div class="col-12 d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-settings text-primary" aria-hidden="true">
-                                            <path
-                                                d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
-                                            </path>
-                                            <circle cx="12" cy="12" r="3"></circle>
-                                        </svg>
-                                        <p>Reasignar caso</p>
-                                    </div>
-                                    <div class="relativ col-12">
-                                        <div class="relativ col-12">
-                                            <p>Transfiera este caso a otro operador. El cambio quedará registrado en la
-                                                trazabilidad.</p>
-                                            <button type="button" class="btn-responsible" data-bs-toggle="modal"
-                                                data-bs-target="#reasignarModal">
-                                                <span id="name-responsible">Responsable: Rodrigo Esteban Muñoz</span>
+                            <div class="col-12 mb-3">
+                                <div class="card">
+                                    <div class="card-actual">
+                                        <div class="row">
+                                            <div class="col-12 d-flex">
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
-                                                    <circle cx="9" cy="7" r="4" />
-                                                    <polyline points="16 11 18 13 22 9" />
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-settings text-primary" aria-hidden="true">
+                                                    <path
+                                                        d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                                                    </path>
+                                                    <circle cx="12" cy="12" r="3"></circle>
                                                 </svg>
-                                            </button>
+                                                <p>Cambiar prioridad</p>
+                                            </div>
+                                            <div class="relativ col-12">
+                                                <p>Solo se muestran las prioridades permitidas para esta categoría. El
+                                                    SLA se recalculará automáticamente.</p>
+                                                <button type="button" class="btn btn-priority" data-bs-toggle="modal"
+                                                    data-bs-target="#estadoModal">
+                                                    <span>Prioridad actual:</span> <span id="estado">Alta</span>
+                                                </button>
+                                            </div>
+
                                         </div>
-
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12"></div>
-                        <div class="col-12 mb-3">
-                            <div class="card">
-                                <div class="card-actual row">
-                                    <div class="col-12 d-flex">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                            stroke-linecap="round" stroke-linejoin="round"
-                                            class="lucide lucide-message-square text-primary" aria-hidden="true">
-                                            <path
-                                                d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
-                                            </path>
-                                        </svg>
-                                        <p>Registrar observación</p>
-
-                                    </div>
-                                    <div class="col-12">
-                                        <textarea rows="3" class="w-full px-3 py-2 border-border"
-                                            id="observacionTextarea"
-                                            placeholder="Escriba su observación interna o respuesta al asociado..."
-                                            name="observacion"></textarea>
-                                        <p class="observacion-error d-none" id="observacionError">Escribe más de 5
-                                            caracteres</p>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="checkbox" value=""
-                                                id="flexCheckDefault">
-                                            <label class="form-check-label" for="flexCheckDefault">
-                                                Notificar esta respuesta al asociado
-                                            </label>
-                                        </div>
-                                    </div>
-                                    <div class="relativ col-12">
-                                        <button type="button" id="registrarObsBtn"
-                                            class="btn btn-primary  text-center w-100"
-                                            style="background-color:#1e3a5f;border-color:#1e3a5f;font-size:14px;">Registrar
-                                            observación</button>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-actual row">
-                                    <div class="col-12 d-flex">
+                            <div class="col-12 mb-3">
+                                <div class="card card-actual">
+                                    <div class="row">
 
-                                        <p class="top-text">Registrar observación</p>
-
-                                    </div>
-                                    <div class="relativ col-12 mb-3">
-                                        <button
-                                            id="btnCerrarCaso" class="w-full flex bg-success items-center gap-2 px-3 py-2.5 rounded-lg bg-accent text-accent-foreground text-sm font-600 hover:bg-accent/90 active:scale-[0.99] transition-all"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                        <div class="col-12 d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                 viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
                                                 stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-lock" aria-hidden="true">
-                                                <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
-                                                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
-                                            </svg>Cerrar caso</button>
-                                    </div>
-                                    <div class="relativ col-12">
-                                        <button
-                                            class="w-full flex bg-danger-subtle border border-danger items-center gap-2 px-3 py-2.5 text-danger rounded-lg border border-red-200 bg-red-50 text-red-600 text-sm font-600 hover:bg-red-100 active:scale-[0.99] transition-all"><svg
-                                                xmlns="http://www.w3.org/2000/svg" width="14" height="14"
-                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                                stroke-linecap="round" stroke-linejoin="round"
-                                                class="lucide lucide-circle-x" aria-hidden="true">
-                                                <circle cx="12" cy="12" r="10"></circle>
-                                                <path d="m15 9-6 6"></path>
-                                                <path d="m9 9 6 6"></path>
-                                            </svg>Anular caso</button>
+                                                class="lucide lucide-settings text-primary" aria-hidden="true">
+                                                <path
+                                                    d="M9.671 4.136a2.34 2.34 0 0 1 4.659 0 2.34 2.34 0 0 0 3.319 1.915 2.34 2.34 0 0 1 2.33 4.033 2.34 2.34 0 0 0 0 3.831 2.34 2.34 0 0 1-2.33 4.033 2.34 2.34 0 0 0-3.319 1.915 2.34 2.34 0 0 1-4.659 0 2.34 2.34 0 0 0-3.32-1.915 2.34 2.34 0 0 1-2.33-4.033 2.34 2.34 0 0 0 0-3.831A2.34 2.34 0 0 1 6.35 6.051a2.34 2.34 0 0 0 3.319-1.915">
+                                                </path>
+                                                <circle cx="12" cy="12" r="3"></circle>
+                                            </svg>
+                                            <p>Reasignar caso</p>
+                                        </div>
+                                        <div class="relativ col-12">
+                                            <div class="relativ col-12">
+                                                <p>Transfiera este caso a otro operador. El cambio quedará registrado en
+                                                    la
+                                                    trazabilidad.</p>
+                                                <button type="button" class="btn-responsible" data-bs-toggle="modal"
+                                                    data-bs-target="#reasignarModal">
+                                                    <span id="name-responsible">Responsable: Rodrigo Esteban
+                                                        Muñoz</span>
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                        viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                        <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" />
+                                                        <circle cx="9" cy="7" r="4" />
+                                                        <polyline points="16 11 18 13 22 9" />
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-
-
-                        <!-- Modal -->
-                        <div class="modal fade" id="estadoModal" tabindex="-1" aria-labelledby="estadoModalLabel"
-                            aria-hidden="true">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-                                    <div class="modal-header align-items-start">
-                                        <div>
-                                            <h5 class="modal-title mb-1">Cambiar Prioridad</h5>
-                                            <p class="text-muted mb-0">Solo prioridades permitidas para esta
-                                                categoría. El SLA se recalculará.</p>
+                            <div class="col-12"></div>
+                            <div class="col-12 mb-3">
+                                <div class="card">
+                                    <div class="card-actual row">
+                                        <div class="col-12 d-flex">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round"
+                                                class="lucide lucide-message-square text-primary" aria-hidden="true">
+                                                <path
+                                                    d="M22 17a2 2 0 0 1-2 2H6.828a2 2 0 0 0-1.414.586l-2.202 2.202A.71.71 0 0 1 2 21.286V5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2z">
+                                                </path>
+                                            </svg>
+                                            <p>Registrar observación</p>
                                         </div>
-                                        <button type="button" class="btn-close ms-3" data-bs-dismiss="modal"
-                                            aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body form-priority">
-                                        <form id="priorityForm">
-                                            <div class="mb-3">
-                                                <label class="form-label text">Nueva prioridad <span
-                                                        class="text-danger">*</span></label>
-
-                                                <label class="priority-option" id="optionNormal">
-                                                    <div class="option-left">
-                                                        <input type="radio" name="priority" id="priorityNormal"
-                                                            value="Normal">
-                                                        <span class="badge-normal">Normal</span>
-                                                        <span class="option-sub">(predeterminada)</span>
-                                                    </div>
-                                                    <span class="sla-text">24h SLA</span>
-                                                </label>
-
-                                                <label class="priority-option" id="optionAlta">
-                                                    <div class="option-left">
-                                                        <input type="radio" name="priority" id="priorityAlta"
-                                                            value="Alta">
-                                                        <span class="badge-alta">Alta</span>
-                                                    </div>
-                                                    <span class="sla-text">8h SLA</span>
-                                                </label>
-
-                                                <label class="priority-option" id="optionCritica">
-                                                    <div class="option-left">
-                                                        <input type="radio" name="priority" id="priorityCritica"
-                                                            value="Crítica">
-                                                        <span class="badge-critica">Crítica</span>
-                                                    </div>
-                                                    <span class="sla-text">4h SLA</span>
+                                        <div class="col-12">
+                                            <textarea rows="3" class="w-full px-3 py-2 border-border"
+                                                id="observacionTextarea"
+                                                placeholder="Escriba su observación interna o respuesta al asociado..."
+                                                name="observacion"></textarea>
+                                            <p class="observacion-error d-none" id="observacionError">Escribe más de 5
+                                                caracteres</p>
+                                            <div class="form-check">
+                                                <input class="form-check-input" type="checkbox" value=""
+                                                    id="flexCheckDefault">
+                                                <label class="form-check-label" for="flexCheckDefault">
+                                                    Notificar esta respuesta al asociado
                                                 </label>
                                             </div>
-                                            <div class="mb-3">
-                                                <label for="priorityReason" class="form-label text">Motivo del
-                                                    cambio <span class="text-danger">*</span></label>
-                                                <textarea class="form-control" id="priorityReason" rows="3"
-                                                    placeholder="Justifique el cambio de prioridad..."
-                                                    required></textarea>
-                                            </div>
-                                        </form>
+                                        </div>
+                                        <div class="relativ col-12">
+                                            <button type="button" id="registrarObsBtn"
+                                                class="btn btn-primary  text-center w-100"
+                                                style="background-color:#1e3a5f;border-color:#1e3a5f;font-size:14px;">Registrar
+                                                observación</button>
+                                        </div>
                                     </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-outline-secondary"
-                                            data-bs-dismiss="modal">Cancelar</button>
-                                        <button type="button" class="btn btn-primary" id="savePriorityBtn" disabled
-                                            style="background-color: #1e3a5f; border-color: #1e3a5f;">Cambiar
-                                            prioridad</button>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-actual row">
+                                        <div class="col-12 d-flex">
+
+                                            <p class="top-text">Registrar observación</p>
+
+                                        </div>
+                                        <div class="relativ col-12 mb-3">
+                                            <button id="btnCerrarCaso"
+                                                class="w-full flex bg-success items-center gap-2 px-3 py-2.5 rounded-lg bg-accent text-accent-foreground text-sm font-600 hover:bg-accent/90 active:scale-[0.99] transition-all"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-lock" aria-hidden="true">
+                                                    <rect width="18" height="11" x="3" y="11" rx="2" ry="2"></rect>
+                                                    <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                                                </svg>Cerrar caso</button>
+                                        </div>
+                                        <div class="relativ col-12">
+                                            <button
+                                                class="w-full flex bg-danger-subtle border border-danger items-center gap-2 px-3 py-2.5 text-danger rounded-lg border border-red-200 bg-red-50 text-red-600 text-sm font-600 hover:bg-red-100 active:scale-[0.99] transition-all"><svg
+                                                    xmlns="http://www.w3.org/2000/svg" width="14" height="14"
+                                                    viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                    class="lucide lucide-circle-x" aria-hidden="true">
+                                                    <circle cx="12" cy="12" r="10"></circle>
+                                                    <path d="m15 9-6 6"></path>
+                                                    <path d="m9 9 6 6"></path>
+                                                </svg>Anular caso</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="modal fade" id="estadoModal" tabindex="-1" aria-labelledby="estadoModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header align-items-start">
+                                            <div>
+                                                <h5 class="modal-title mb-1">Cambiar Prioridad</h5>
+                                                <p class="text-muted mb-0">Solo prioridades permitidas para esta
+                                                    categoría. El SLA se recalculará.</p>
+                                            </div>
+                                            <button type="button" class="btn-close ms-3" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body form-priority">
+                                            <form id="priorityForm">
+                                                <div class="mb-3">
+                                                    <label class="form-label text">Nueva prioridad <span
+                                                            class="text-danger">*</span></label>
+
+                                                    <label class="priority-option" id="optionNormal">
+                                                        <div class="option-left">
+                                                            <input type="radio" name="priority" id="priorityNormal"
+                                                                value="Normal">
+                                                            <span class="badge-normal">Normal</span>
+                                                            <span class="option-sub">(predeterminada)</span>
+                                                        </div>
+                                                        <span class="sla-text">24h SLA</span>
+                                                    </label>
+                                                    <label class="priority-option" id="optionAlta">
+                                                        <div class="option-left">
+                                                            <input type="radio" name="priority" id="priorityAlta"
+                                                                value="Alta">
+                                                            <span class="badge-alta">Alta</span>
+                                                        </div>
+                                                        <span class="sla-text">8h SLA</span>
+                                                    </label>
+                                                    <label class="priority-option" id="optionCritica">
+                                                        <div class="option-left">
+                                                            <input type="radio" name="priority" id="priorityCritica"
+                                                                value="Crítica">
+                                                            <span class="badge-critica">Crítica</span>
+                                                        </div>
+                                                        <span class="sla-text">4h SLA</span>
+                                                    </label>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="priorityReason" class="form-label text">Motivo del
+                                                        cambio <span class="text-danger">*</span></label>
+                                                    <textarea class="form-control" id="priorityReason" rows="3"
+                                                        placeholder="Justifique el cambio de prioridad..."
+                                                        required></textarea>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-outline-secondary"
+                                                data-bs-dismiss="modal">Cancelar</button>
+                                            <button type="button" class="btn btn-primary" id="savePriorityBtn" disabled
+                                                style="background-color: #1e3a5f; border-color: #1e3a5f;">Cambiar
+                                                prioridad</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    </div>
-                   
                 </div>
             </div>
         </div>
@@ -1574,8 +1702,6 @@
     </div>
     </div>
     </div>
-
-    <!-- Modal Reasignar Caso -->
     <div class="modal fade modal-reasignar" id="reasignarModal" tabindex="-1" aria-labelledby="reasignarModalLabel"
         aria-hidden="true">
         <div class="modal-dialog">
@@ -1589,21 +1715,28 @@
                     <button type="button" class="btn-close ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-reasignar">
-                   <div class="respon-user">
-                    
-                    <div class="responsable-actual-card">
-                        <div class="responsable-actual-avatar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-primary" aria-hidden="true"><path d="m16 11 2 2 4-4"></path><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
-                        </div>
-                        <div>
-                             <p class="top-text mb-0">Responsable actual</p>
-                            <p class="responsable-actual-name mb-0" id="responsableActualName">Valentina Ospina Ríos</p>
-                            <p class="responsable-actual-role mb-0" id="responsableActualRole">Coordinadora de Atención
-                                al Asociado · Servicio al Asociado</p>
+                    <div class="respon-user">
+                        <div class="responsable-actual-card">
+                            <div class="responsable-actual-avatar">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-user-check text-primary"
+                                    aria-hidden="true">
+                                    <path d="m16 11 2 2 4-4"></path>
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="9" cy="7" r="4"></circle>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="top-text mb-0">Responsable actual</p>
+                                <p class="responsable-actual-name mb-0" id="responsableActualName">Valentina Ospina Ríos
+                                </p>
+                                <p class="responsable-actual-role mb-0" id="responsableActualRole">Coordinadora de
+                                    Atención
+                                    al Asociado · Servicio al Asociado</p>
+                            </div>
                         </div>
                     </div>
-                   </div>
-
                     <div class="mb-3 mt-3">
                         <label class="form-label text">Nuevo operador responsable <span
                                 class="text-danger">*</span></label>
@@ -1618,7 +1751,6 @@
                                 placeholder="Buscar por nombre, área o cargo...">
                         </div>
                     </div>
-
                     <div class="operators-list" id="operatorsList">
                         <div class="operator-item" data-name="Carlos Andrés Moreno"
                             data-role="Analista de Crédito Senior · Cartera y Crédito">
@@ -1683,8 +1815,6 @@
             </div>
         </div>
     </div>
-
-    <!-- Toast reasignación -->
     <div id="reasignarToast" class="priority-toast" role="alert" aria-live="polite">
         <div class="priority-toast-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -1705,8 +1835,6 @@
             </svg>
         </button>
     </div>
-
-    <!-- Toast observación -->
     <div id="obsToast" class="priority-toast" role="alert" aria-live="polite">
         <div class="priority-toast-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -1727,8 +1855,6 @@
             </svg>
         </button>
     </div>
-
-    <!-- Toast de confirmación -->
     <div id="priorityToast" class="priority-toast" role="alert" aria-live="polite">
         <div class="priority-toast-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -1749,49 +1875,65 @@
             </svg>
         </button>
     </div>
-
-    <!-- Modal Cerrar Caso -->
-    <div class="modal fade modal-cerrar-caso" id="modalCerrarCaso" tabindex="-1" aria-labelledby="modalCerrarCasoLabel" aria-hidden="true">
+    <div class="modal fade modal-cerrar-caso" id="modalCerrarCaso" tabindex="-1" aria-labelledby="modalCerrarCasoLabel"
+        aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable">
             <div class="modal-content">
-                <!-- Header -->
-                <div class="modal-header cerrar-caso-header">
+               <div class="modal-header cerrar-caso-header">
                     <div>
                         <h5 class="modal-title" id="modalCerrarCasoLabel">Cerrar Caso</h5>
-                        <p class="cerrar-caso-subtitle">Complete los campos obligatorios y opcionales para cerrar el caso</p>
+                        <p class="cerrar-caso-subtitle">Complete los campos obligatorios y opcionales para cerrar el
+                            caso</p>
                     </div>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
                 </div>
-                <!-- Body -->
                 <div class="modal-body cerrar-caso-body">
-                    <!-- Auditoría -->
                     <div class="cerrar-auditoria-box">
                         <div class="cerrar-auditoria-title">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+                            </svg>
                             DATOS DE AUDITORÍA – SE GUARDARÁN AUTOMÁTICAMENTE
                         </div>
                         <ul class="cerrar-auditoria-list">
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" />
+                                    <circle cx="12" cy="7" r="4" />
+                                </svg>
                                 <span>Usuario: <strong>Rodrigo Esteban Muñoz</strong></span>
                             </li>
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-                                <span>Fecha/hora: <span class="cerrar-auditoria-link">Se registrará al confirmar</span></span>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <polyline points="12 6 12 12 16 14" />
+                                </svg>
+                                <span>Fecha/hora: <span class="cerrar-auditoria-link">Se registrará al
+                                        confirmar</span></span>
                             </li>
                             <li>
-                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <line x1="2" y1="12" x2="22" y2="12" />
+                                    <path
+                                        d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z" />
+                                </svg>
                                 <span>IP de cierre: <span class="cerrar-auditoria-link">186.85.240.97</span></span>
                             </li>
                         </ul>
                     </div>
-
-                    <!-- Campos obligatorios -->
                     <div class="cerrar-section-label cerrar-section-required">
                         <span class="cerrar-dot dot-required"></span>
                         CAMPOS OBLIGATORIOS
                     </div>
-
                     <div class="cerrar-field-group">
                         <label class="cerrar-field-label">Tipo de causa <span class="cerrar-required">*</span></label>
                         <p class="cerrar-field-hint">Causas disponibles para la categoría de este caso</p>
@@ -1803,9 +1945,9 @@
                             <option value="fraude">Fraude confirmado</option>
                         </select>
                     </div>
-
                     <div class="cerrar-field-group">
-                        <label class="cerrar-field-label">Tipo de solución <span class="cerrar-required">*</span></label>
+                        <label class="cerrar-field-label">Tipo de solución <span
+                                class="cerrar-required">*</span></label>
                         <p class="cerrar-field-hint">Soluciones disponibles para la categoría de este caso</p>
                         <select class="cerrar-select" id="cerrarSolucion">
                             <option value="">Seleccionar solución...</option>
@@ -1815,14 +1957,14 @@
                             <option value="informacion">Información suministrada</option>
                         </select>
                     </div>
-
                     <div class="cerrar-field-group">
-                        <label class="cerrar-field-label">Respuesta final al asociado <span class="cerrar-required">*</span></label>
-                        <p class="cerrar-field-hint">Este mensaje será enviado al asociado como respuesta oficial al caso</p>
-                        <textarea class="cerrar-textarea" id="cerrarRespuesta" rows="4" placeholder="Estimado asociado, en respuesta a su solicitud le informamos que..."></textarea>
+                        <label class="cerrar-field-label">Respuesta final al asociado <span
+                                class="cerrar-required">*</span></label>
+                        <p class="cerrar-field-hint">Este mensaje será enviado al asociado como respuesta oficial al
+                            caso</p>
+                        <textarea class="cerrar-textarea" id="cerrarRespuesta" rows="4"
+                            placeholder="Estimado asociado, en respuesta a su solicitud le informamos que..."></textarea>
                     </div>
-
-                    <!-- Campos opcionales -->
                     <div class="cerrar-section-label cerrar-section-optional">
                         <span class="cerrar-dot dot-optional"></span>
                         CAMPOS OPCIONALES
@@ -1830,27 +1972,29 @@
 
                     <div class="cerrar-field-group">
                         <label class="cerrar-field-label">Explicación detallada de la causa</label>
-                        <textarea class="cerrar-textarea" id="cerrarExplicacionCausa" rows="3" placeholder="Describa en detalle la causa identificada del caso..."></textarea>
+                        <textarea class="cerrar-textarea" id="cerrarExplicacionCausa" rows="3"
+                            placeholder="Describa en detalle la causa identificada del caso..."></textarea>
                     </div>
-
                     <div class="cerrar-field-group">
                         <label class="cerrar-field-label">Explicación detallada de la solución</label>
-                        <textarea class="cerrar-textarea" id="cerrarExplicacionSolucion" rows="3" placeholder="Describa en detalle la solución aplicada al caso..."></textarea>
+                        <textarea class="cerrar-textarea" id="cerrarExplicacionSolucion" rows="3"
+                            placeholder="Describa en detalle la solución aplicada al caso..."></textarea>
                     </div>
                 </div>
-                <!-- Footer -->
                 <div class="modal-footer cerrar-caso-footer">
                     <button type="button" class="btn-cerrar-cancelar" data-bs-dismiss="modal">Cancelar</button>
                     <button type="button" class="btn-cerrar-confirmar" id="btnConfirmarCierre">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+                            <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+                        </svg>
                         Cerrar caso
                     </button>
                 </div>
             </div>
         </div>
     </div>
-
-    <!-- Toast comentario -->
     <div id="commentToast" class="priority-toast" role="alert" aria-live="polite">
         <div class="priority-toast-icon">
             <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
@@ -1871,7 +2015,6 @@
             </svg>
         </button>
     </div>
-
     <script src="assets/js/components/collapse-description.js"></script>
     <script src="assets/js/components/sidebar.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
@@ -1881,13 +2024,12 @@
         integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y"
         crossorigin="anonymous"></script>
     <script src="assets/js/components/modal-state.js"></script>
-    <script src="assets/js/components/reasignar-modal.js"></script>
-    <script src="assets/js/components/observacion-form.js"></script>
+    <script src="assets/js/components/reassign-modal.js"></script>
+    <script src="assets/js/components/observation-form.js"></script>
     <script src="assets/js/components/comments.js"></script>
     <script src="assets/js/components/attachments.js"></script>
     <script src="assets/js/components/history.js"></script>
-    <script src="assets/js/components/cerrar-caso.js"></script>
-
+    <script src="assets/js/components/close-case.js"></script>
 </body>
 
 </html>
