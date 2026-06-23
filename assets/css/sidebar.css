@@ -110,7 +110,8 @@ li.tap {
     cursor: pointer;
     width: 108%;
     position: relative;
-    left: -6px;
+    left: 0px;
+    top: 7px;
 }
 
 li.tap.active {

@@ -89,7 +89,6 @@
 
                 const val = selected.value;
 
-                // Estado de carga en el botón
                 saveBtn.disabled = true;
                 saveBtn.innerHTML = '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Guardando...';
 
@@ -107,5 +106,6 @@
                     showToast();
                 }, 1300);
             });
+
         });
    

@@ -7,6 +7,7 @@
     var searchInput      = document.getElementById('operatorSearch');
     var noResultsEl      = document.getElementById('operatorNoResults');
     var nameSpan         = document.getElementById('name-responsible');
+    var estadoNameEl     = document.getElementById('responsible-estado');
     var actualNameEl     = document.getElementById('responsableActualName');
     var actualRoleEl     = document.getElementById('responsableActualRole');
     var toastEl          = document.getElementById('reasignarToast');
@@ -99,8 +100,9 @@
             '<span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Guardando...';
 
         setTimeout(function () {
-            // 1. Actualiza el botón de la tarjeta lateral
-            nameSpan.textContent =  name;
+            // 1. Actualiza el botón lateral y la tarjeta de estado
+            if (nameSpan)     nameSpan.textContent     = 'Responsable: ' + name;
+            if (estadoNameEl) estadoNameEl.textContent = name;
 
             // 2. Actualiza la sección "Responsable actual" del modal
             updateActualSection(name, role);
@@ -122,7 +124,8 @@
     var savedName = localStorage.getItem('caseResponsible');
     var savedRole = localStorage.getItem('caseResponsibleRole');
     if (savedName) {
-        if (nameSpan)     nameSpan.textContent =  savedName;
+        if (nameSpan)     nameSpan.textContent     = 'Responsable: ' + savedName;
+        if (estadoNameEl) estadoNameEl.textContent = savedName;
         updateActualSection(savedName, savedRole || '');
     }
 }());
