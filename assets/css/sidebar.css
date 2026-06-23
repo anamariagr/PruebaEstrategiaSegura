@@ -128,12 +128,10 @@ li.tap a {
     padding: 1px 10px 10px 2px;
     color: #b6c2d0;
     text-decoration: none;
-    margin-top: 10px;
+    margin-top: 1px;
 }
 
-li.tap:hover {
-    background: #405777;
-}
+
 
 li.tap a .text:hover {
     color: white;

@@ -80,7 +80,8 @@
                             </div>
                         </div>
                         <div class="col-lg-2 col-12 d-lg-flex justify-content-end">
-                            <button class="flex btn-case mb-sm-3">
+                            <button class="flex btn-case mb-sm-3" data-bs-toggle="modal"
+                                                data-bs-target="#reasignarModal">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 24 24"
                                     fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                     stroke-linejoin="round" class="lucide lucide-user-check" aria-hidden="true">
@@ -308,10 +309,10 @@
                                             Respuestas
                                         </button>
                                     </div>
-                                    <div class="tab-content p-4">
-                                        <div class="tab-pane active" id="tab-description">
+                                    <div class="tab-content p-0">
+                                        <div class="tab-pane active p-3" id="tab-description">
                                             <p class="mb-2">Descripción del caso</p>
-                                            <p class="text-muted">Pago PSE por $2.350.000 al banco Davivienda no fue
+                                            <p class="text-muted p-3">Pago PSE por $2.350.000 al banco Davivienda no fue
                                                 acreditado. Código: PSE-20260503-8847.</p>
                                         </div>
                                         <div class="tab-pane" id="tab-comments">
@@ -388,9 +389,9 @@
                                             <!-- Lista de comentarios -->
                                             <div id="commentsList">
 
-                                                <div class="comment-card" data-type="interno">
-                                                    <div class="comment-avatar ca-j">J</div>
-                                                    <div class="comment-content">
+                                                <div class="comment-card row" data-type="interno">
+                                                    <div class="comment-avatar">J</div>
+                                                    <div class="comment-content col-12">
                                                         <div class="comment-top">
                                                             <div class="comment-info">
                                                                 <span class="comment-author">Jorge Iván Castillo</span>
@@ -425,17 +426,17 @@
                                                             </svg>
                                                             04/05/2026 18:50 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
-                                                        <div class="comment-body">
+                                                    </div>
+                                                      <div class="comment-body col-12">
                                                             Se solicita validación al área de cartera sobre el estado de
                                                             la transacción PSE. El débito fue aplicado pero no se
                                                             refleja acreditación en el banco destino.
                                                         </div>
-                                                    </div>
                                                 </div>
 
-                                                <div class="comment-card" data-type="visible">
-                                                    <div class="comment-avatar ca-l">L</div>
-                                                    <div class="comment-content">
+                                                <div class="comment-card row" data-type="visible">
+                                                    <div class="comment-avatar">L</div>
+                                                    <div class="comment-content col-12">
                                                         <div class="comment-top">
                                                             <div class="comment-info">
                                                                 <span class="comment-author">Luisa Fernanda
@@ -471,18 +472,19 @@
                                                             </svg>
                                                             04/05/2026 19:14 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
-                                                        <div class="comment-body">
+                                                        
+                                                    </div>
+                                                     <div class="comment-body col-12">
                                                             Estimado asociado, hemos recibido su caso y estamos
                                                             verificando el estado de la transacción con el área de
                                                             cartera. Le informaremos en un plazo máximo de 24 horas.
                                                         </div>
-                                                    </div>
                                                 </div>
 
-                                                <div class="comment-card" data-type="interno">
-                                                    <div class="comment-avatar ca-c">C</div>
+                                                <div class="comment-card row" data-type="interno">
+                                                    <div class="comment-avatar">C</div>
                                                     <div class="comment-content">
-                                                        <div class="comment-top">
+                                                        <div class="comment-top col-12">
                                                             <div class="comment-info">
                                                                 <span class="comment-author">Carlos Andrés Moreno</span>
                                                                 <span class="comment-badge badge-interno">
@@ -516,13 +518,14 @@
                                                             </svg>
                                                             05/05/2026 08:22 &nbsp;·&nbsp; IP: 190.24.135.78
                                                         </div>
-                                                        <div class="comment-body">
+                                                       
+                                                    </div>
+                                                     <div class="comment-body col-12">
                                                             Se escala a Davivienda para confirmación de recepción del
                                                             débito PSE-20260503-8847. Se adjunta comprobante de débito
                                                             exitoso en origen. Caso prioridad crítica, requiere
                                                             respuesta en máximo 4h.
                                                         </div>
-                                                    </div>
                                                 </div>
 
                                                 <div class="comments-empty d-none" id="commentsEmpty">
@@ -616,14 +619,7 @@
 
                                                 <div class="attach-card" data-type="pdf">
                                                     <div class="attach-icon attach-icon-pdf">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-                                                            viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                            stroke-width="1.8" stroke-linecap="round"
-                                                            stroke-linejoin="round">
-                                                            <path
-                                                                d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z" />
-                                                            <path d="M14 2v4a2 2 0 0 0 2 2h4" />
-                                                        </svg>
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-file-text text-primary" aria-hidden="true"><path d="M6 22a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2.4 2.4 0 0 1 1.704.706l3.588 3.588A2.4 2.4 0 0 1 20 8v12a2 2 0 0 1-2 2z"></path><path d="M14 2v5a1 1 0 0 0 1 1h5"></path><path d="M10 9H8"></path><path d="M16 13H8"></path><path d="M16 17H8"></path></svg>
                                                     </div>
                                                     <div class="attach-info">
                                                         <div class="attach-name-row">
@@ -749,7 +745,7 @@
                                             </div>
                                         </div>
                                         <div class="tab-pane" id="tab-history">
-                                        <div class="history-panel">
+                                        <div class="history-panel m-3">
                                             <div class="history-heading">
                                                 <div>
                                                     <div class="history-title">
@@ -1259,7 +1255,8 @@
                                                 </div>
                                             </div>
                                             <!-- Respuestas enviadas -->
-                                            <p class="responses-sent-label">RESPUESTAS ENVIADAS AL ASOCIADO</p>
+                                           <div class="conten-alert m-4">
+                                             <p class="responses-sent-label">RESPUESTAS ENVIADAS AL ASOCIADO</p>
                                             <div class="response-sent-card">
                                                 <div class="response-sent-top">
                                                     <span class="response-sent-badge">Respuesta enviada</span>
@@ -1267,6 +1264,7 @@
                                                 </div>
                                                 <p class="response-sent-body">PSE requiere soporte adicional del asociado: comprobante de pago y pantallazos.</p>
                                             </div>
+                                           </div>
                                         </div>
                                     </div>
                                 </div>
@@ -1297,7 +1295,7 @@
                                                     <p class="status-pending ">Pendiente de Información
                                                     </p>
                                                     <p class="priority-critica" id="priorityBadge">Crítica</p>
-                                                    <p>Rodrigo Esteban Muñoz</p>
+                                                    <p id="name-responsible">Rodrigo Esteban Muñoz</p>
                                                     <p id="slaValue">4h</p>
                                                 </div>
 
@@ -1407,7 +1405,7 @@
                                                 trazabilidad.</p>
                                             <button type="button" class="btn-responsible" data-bs-toggle="modal"
                                                 data-bs-target="#reasignarModal">
-                                                <span id="name-responsible">Responsable: Valentina Ospina Ríos</span>
+                                                <span id="name-responsible"></span>
                                                 <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14"
                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -1585,28 +1583,26 @@
                 <div class="modal-header align-items-start">
                     <div>
                         <h5 class="modal-title mb-1">Reasignar Caso</h5>
-                        <p class="text-muted mb-0">Transfiera la responsabilidad del caso FPQRS-2026-04779 a otro
+                        <p class="text-muted mb-3">Transfiera la responsabilidad del caso FPQRS-2026-04779 a otro
                             operador activo</p>
                     </div>
                     <button type="button" class="btn-close ms-3" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body form-reasignar">
-                    <p class="top-text">Responsable actual</p>
+                   <div class="respon-user">
+                    
                     <div class="responsable-actual-card">
                         <div class="responsable-actual-avatar">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                stroke-linejoin="round">
-                                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                                <circle cx="12" cy="7" r="4" />
-                            </svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-user-check text-primary" aria-hidden="true"><path d="m16 11 2 2 4-4"></path><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle></svg>
                         </div>
                         <div>
+                             <p class="top-text mb-0">Responsable actual</p>
                             <p class="responsable-actual-name mb-0" id="responsableActualName">Valentina Ospina Ríos</p>
                             <p class="responsable-actual-role mb-0" id="responsableActualRole">Coordinadora de Atención
                                 al Asociado · Servicio al Asociado</p>
                         </div>
                     </div>
+                   </div>
 
                     <div class="mb-3 mt-3">
                         <label class="form-label text">Nuevo operador responsable <span

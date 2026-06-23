@@ -100,7 +100,7 @@
 
         setTimeout(function () {
             // 1. Actualiza el botón de la tarjeta lateral
-            nameSpan.textContent = 'Responsable: ' + name;
+            nameSpan.textContent =  name;
 
             // 2. Actualiza la sección "Responsable actual" del modal
             updateActualSection(name, role);
@@ -122,7 +122,7 @@
     var savedName = localStorage.getItem('caseResponsible');
     var savedRole = localStorage.getItem('caseResponsibleRole');
     if (savedName) {
-        if (nameSpan)     nameSpan.textContent = 'Responsable: ' + savedName;
+        if (nameSpan)     nameSpan.textContent =  savedName;
         updateActualSection(savedName, savedRole || '');
     }
 }());
